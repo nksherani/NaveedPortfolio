@@ -174,17 +174,19 @@ An Agentic AI application designed to democratize data access. The interface ena
 ## 7. Healthcare Facility Management Platform
 **Tagline:** Modernizing a legacy desktop facility-management system into APIs and mobile apps for scheduling, staffing, and HR
 **Category:** Healthcare / Workforce & Facility Operations
-**Target Audience:** Healthcare facilities, clinical operations, and HR/payroll teams (US market client)
+**Client / Delivery:** Turing.com client (US market)
+**Target Audience:** Healthcare facilities, clinical operations, and HR/payroll teams
 **Platforms:** Microsoft Azure / Mobile (iOS & Android)
-**Tech Stack:** .NET, C#, Azure, Azure SQL, Azure App Service, AKS
+**Tech Stack:** .NET, C#, Azure, Azure SQL, Azure App Service, AKS, Hangfire, Azure AD SSO
 
 ### Project Overview & Highlights
 Modernization of an existing healthcare facility management desktop application. Core business logic was extracted and rebuilt as service APIs, with new capabilities spanning workforce scheduling, time cards, shift management, HR, payroll, and operational coordination—delivered through mobile apps alongside the web/API platform.
 - **Desktop-to-API Modernization:** Converted established facility-management business rules from a legacy desktop application into secure, scalable APIs so clients and new apps could share one source of truth.
+- **Legacy Sync Bridge:** Kept the desktop app wired into the new SaaS backend during transition so existing workflows continued while the platform was rebuilt.
 - **Scheduling, Shifts & Time Cards:** Extended the platform with scheduling workflows, shift assignment/management, and time-card capture to support day-to-day clinical and support staffing.
 - **HR, Payroll & Coordination:** Added HR and payroll-aligned features plus coordination tooling so facility teams could manage staffing, approvals, and operational handoffs in one system.
 - **Mobile Workforce Access:** Introduced mobile applications so staff and supervisors could manage shifts, time cards, and coordination on the floor—not only from the desktop.
-- **Architecture & Delivery:** Evolved the rewritten services toward a modular, cloud-hosted microservices style on Azure (.NET / C#), deployed via App Service and AKS with Azure SQL, improving reliability and enabling iterative feature delivery.
+- **SaaS Architecture:** Greenfield SaaS architecture and DB design on Azure (.NET / C#), domain services (DDD), App Service / AKS, Azure SQL, Azure AD SSO, logging/exception middlewares, and Hangfire background jobs.
 
 ---
 
