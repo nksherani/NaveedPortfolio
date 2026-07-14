@@ -4,8 +4,8 @@ This is a modern, responsive, high-performance portfolio website built with pure
 
 ## Core Features & Design Highlights
 
-*   **Sleek Dark Mode & Vibrant Accents:** Uses modern HSL color tokens for a deep navy/slate background with glowing violet and teal gradients.
-*   **Glassmorphism Panels:** Custom styled containers using `backdrop-filter` blur and saturation, with subtle borders.
+*   **Editorial light theme:** Cool stone backgrounds, deep ink typography, and a maritime teal accent—no neon gradients or dark-mode glow effects.
+*   **Restrained surfaces:** Clean white panels with hairline borders for hierarchy, without glassmorphism or heavy shadows.
 *   **Scroll-Driven Animations:** Implements native CSS scroll-driven animations (`animation-timeline: view()`) with a lightweight `IntersectionObserver` JS fallback for unsupported browsers (like Firefox).
 *   **Dynamic Portfolio Filter:** Interactive category filtering for projects (Enterprise AI, SaaS/Consumer, Cloud/Data) with smooth transition animations.
 *   **Fully Responsive Layout:** Fully adaptive menu and grid systems supporting screen sizes from small mobile screens to high-resolution desktop viewports.

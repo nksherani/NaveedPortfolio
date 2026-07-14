@@ -51,8 +51,7 @@ document.addEventListener('DOMContentLoaded', () => {
         const category = card.getAttribute('data-category');
         
         if (filterValue === 'all' || category === filterValue) {
-          card.style.display = 'flex';
-          // Smooth fade-in
+          card.style.display = 'block';
           setTimeout(() => {
             card.style.opacity = '1';
             card.style.transform = 'translateY(0)';
@@ -60,7 +59,6 @@ document.addEventListener('DOMContentLoaded', () => {
         } else {
           card.style.opacity = '0';
           card.style.transform = 'translateY(10px)';
-          // Wait for transition before hiding
           setTimeout(() => {
             card.style.display = 'none';
           }, 200);

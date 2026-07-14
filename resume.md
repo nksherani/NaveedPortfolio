@@ -38,7 +38,13 @@ Principal Software Engineer and AI Solution Architect with 9+ years of experienc
 * **CI/CD & CLI Tooling:** Deeply proficient in **Azure CLI**, **Firebase CLI**, **AWS CLI**, and **GitHub CLI** to streamline infrastructure as code (IaC) and deployment pipelines.
 * **Model Context Protocol (MCP):** Developing agentic database connections and workflows using the Model Context Protocol to translate natural language into business intelligence queries.
 
-### 5. Stakeholder Management & Consulting
+### 5. Traditional Software Development
+* **Programming Languages & Backend Frameworks:** Strong delivery experience with **Python** (including **FastAPI**), **C# / .NET (6/8)**, **Node.js**, and **.NET Web API**.
+* **Frontend & Mobile:** **JavaScript**, **TypeScript**, **React.js**, **Next.js**, and **React Native** (Android/iOS), including Firebase-backed consumer apps.
+* **Application Foundations:** REST API design; **Azure AD SSO** and **Google Auth**; shared middlewares for logging and global exception handling; **Hangfire** background jobs; Domain-Driven Design (DDD) domain services.
+* **Domains & Integrations:** Ecommerce/POCs, payment gateways, and financial software; multi-tenant SaaS (clients, teams, roles); third-party social and ads APIs (Meta, X, YouTube, LinkedIn, TikTok).
+
+### 6. Stakeholder Management & Consulting
 * **RFP & Proposal Preparation:** Experienced in preparing technical proposals, RFP responses, scope documents, and detailed effort estimation models.
 * **Architecture Diagrams:** Designing clear, end-to-end system architectures across application, integration, and security layers.
 * **Consulting & Leadership:** Proven ability to engage with business, technical, and C-level executive stakeholders to drive AI adoption across diverse domains (including auditing and fintech).

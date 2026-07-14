@@ -3,27 +3,21 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Portfolio of Naveed Ahmed, Principal Software Engineer and AI Solution Architect specializing in Generative AI, RAG, Agentic AI, MLOps, and enterprise Azure cloud platforms.">
+  <meta name="description" content="Portfolio of Naveed Ahmed — Principal Software Engineer and AI Solution Architect. Selected products, enterprise systems, and engineering leadership.">
   <title>Naveed Ahmed | AI Solution Architect & Principal Software Engineer</title>
-  
-  <!-- Fonts -->
+
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Outfit:wght@400;500;600;700;800&display=swap" rel="stylesheet">
-  
-  <!-- Stylesheet -->
+  <link href="https://fonts.googleapis.com/css2?family=Figtree:ital,wght@0,400..700;1,400..700&family=Fraunces:opsz,wght@9..144,500..700&display=swap" rel="stylesheet">
+
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
+  <div class="site-bg" aria-hidden="true"></div>
 
-  <!-- Background Glowing Orbs -->
-  <div class="blob blob-purple" aria-hidden="true"></div>
-  <div class="blob blob-blue" aria-hidden="true"></div>
-
-  <!-- Header Navigation -->
   <header class="header">
     <nav class="nav-container">
-      <a href="#hero" class="nav-logo" id="nav-logo-link">NA</a>
+      <a href="#hero" class="nav-logo" id="nav-logo-link">Naveed<span>.</span>Ahmed</a>
       <ul class="nav-menu">
         <li><a href="#about" class="nav-link" id="nav-about-link">About</a></li>
         <li><a href="#skills" class="nav-link" id="nav-skills-link">Skills</a></li>
@@ -31,7 +25,7 @@
         <li><a href="#experience" class="nav-link" id="nav-experience-link">Experience</a></li>
         <li><a href="#contact" class="nav-link" id="nav-contact-link">Contact</a></li>
       </ul>
-      <button class="menu-toggle" id="menu-toggle-btn" aria-label="Toggle menu">
+      <button class="menu-toggle" id="menu-toggle-btn" aria-label="Toggle menu" aria-expanded="false">
         <span></span>
         <span></span>
         <span></span>
@@ -40,397 +34,563 @@
   </header>
 
   <main>
-    <!-- Hero Section -->
     <section id="hero" class="hero-section">
+      <div class="hero-plane" aria-hidden="true"></div>
       <div class="hero-content">
-        <span class="hero-badge">Available for Enterprise Projects</span>
+        <p class="hero-kicker">Principal Software Engineer · AI Solution Architect</p>
         <h1 class="hero-title">Naveed Ahmed</h1>
-        <p class="hero-subtitle">Principal Software Engineer & <span class="gradient-text">AI Solution Architect</span></p>
+        <p class="hero-subtitle">Enterprise AI systems and products, designed for production.</p>
         <p class="hero-description">
-          Building state-of-the-art Generative AI systems, multi-agent workflows, and robust MLOps data pipelines on Microsoft Azure cloud infrastructure.
+          Generative AI platforms, multi-agent workflows, and MLOps pipelines on Microsoft Azure—built for scale, auditability, and real business outcomes.
         </p>
         <div class="hero-actions">
-          <a href="#projects" class="btn btn-primary" id="hero-btn-portfolio">Explore My Portfolio</a>
-          <a href="#contact" class="btn btn-secondary" id="hero-btn-contact">Get In Touch</a>
+          <a href="#projects" class="btn btn-primary" id="hero-btn-portfolio">View projects</a>
+          <a href="#contact" class="btn btn-secondary" id="hero-btn-contact">Contact</a>
         </div>
       </div>
     </section>
 
-    <!-- About / Summary Section -->
     <section id="about" class="about-section scroll-reveal">
       <div class="section-header">
+        <span class="section-eyebrow">About</span>
         <h2 class="section-title">Professional Summary</h2>
-        <div class="title-bar"></div>
       </div>
       <div class="about-card glass-panel">
         <p>
-          I am a Principal Software Engineer and AI Solution Architect with <strong>9+ years of technology experience</strong>, including <strong>7 years of deep expertise in Microsoft Azure</strong> and <strong>1.5+ years of specialized Generative AI and MLOps engineering</strong>.
-        </p>
-        <p>
-          I specialize in translating complex business problems into highly scalable, production-ready AI solutions. My experience ranges from training and evaluating ML models (XGBoost, BERT, SVC) to implementing complex multi-agent architectures (LangGraph) and optimizing vector retrieval engines (Pinecone, Azure Search).
-        </p>
-        <p>
-          Additionally, I automate full MLOps pipelines—from raw blob ingestion, feature engineering, and metrics-driven model selection via AutoML, to continuous deployment of secure endpoints.
+          Principal Software Engineer and AI Solution Architect with <strong>9+ years</strong> of experience in software architecture, including <strong>7 years</strong> of deep expertise in Microsoft Azure cloud services and <strong>1.5 years</strong> of specialized, hands-on experience in AI and MLOps. Proven ability to translate complex business problems into practical AI solutions, leading end-to-end delivery from data preparation and feature engineering to model training, deployment, and production monitoring. Deeply experienced in Generative AI, Agentic AI, RAG, and LLMs (including Local LLMs). Highly proficient in creating RFP responses, technical roadmaps, and engaging with technical and executive stakeholders to drive AI adoption across diverse domains.
         </p>
       </div>
     </section>
 
-    <!-- Skills Section -->
     <section id="skills" class="skills-section scroll-reveal">
       <div class="section-header">
-        <h2 class="section-title">Core Competencies</h2>
-        <div class="title-bar"></div>
+        <span class="section-eyebrow">Capabilities</span>
+        <h2 class="section-title">Core Skills</h2>
+        <p class="section-lead">Mapped to AI Solution Architect delivery: Generative AI, data science, Azure architecture, MLOps, traditional software development, and consulting.</p>
       </div>
-      
-      <div class="skills-grid">
-        <!-- Card 1: GenAI & LLMs -->
-        <div class="skills-card glass-panel">
-          <div class="card-icon">⚡</div>
-          <h3>Generative AI & Agents</h3>
-          <ul class="skills-list">
-            <li>LangGraph Multi-Agent Workflows</li>
-            <li>RAG Architectures (Pinecone / Hybrid Search)</li>
-            <li>Local LLM Orchestration & Prompt Tuning</li>
-            <li>Native Tool Calling & LLM Guardrails</li>
-            <li>Custom Context-Preserving Chunking</li>
-          </ul>
-        </div>
 
-        <!-- Card 2: ML & Data Science -->
-        <div class="skills-card glass-panel">
-          <div class="card-icon">📊</div>
-          <h3>Data Science & ML</h3>
-          <ul class="skills-list">
-            <li>Model Training (XGBoost, SVC, Regressions)</li>
-            <li>BERT Model Fine-Tuning & Custom Loss</li>
-            <li>Text Embeddings & NLP Pipelines</li>
-            <li>AI-Driven Data Cleansing & Augmentation</li>
-            <li>Feature Engineering & Normalization</li>
+      <div class="skills-detail-grid">
+        <article class="skills-detail glass-panel">
+          <div class="card-icon">01</div>
+          <h3>Generative AI, LLMs &amp; Agentic AI</h3>
+          <ul class="detail-list">
+            <li><strong>Agentic AI Workflows:</strong> Hands-on experience designing and building multi-agent systems using <strong>LangGraph</strong> (specifically implementing cooperative Content, Engagement, Strategy, and Optimization agents) with brand-safety guardrails.</li>
+            <li><strong>RAG (Retrieval-Augmented Generation):</strong> Expert in designing enterprise RAG architectures using <strong>OpenAI embedding models</strong>, specialized context-preserving chunking strategies, and custom high-fidelity page/clause citation mapping systems.</li>
+            <li><strong>Local &amp; Cloud LLMs:</strong> Experience hosting, orchestrating, and prompting Local LLMs and commercial APIs (GPT-4, Gemini, GLM) for text generation, semantic reasoning, and database interfacing.</li>
+            <li><strong>Prompt Engineering &amp; Tool Calling:</strong> Designing structured multi-step prompts (single-prompt categorizations, binary cascades, and hybrid majority-voting workflows) and integrating native model tool calling.</li>
           </ul>
-        </div>
+        </article>
 
-        <!-- Card 3: Cloud & Architecture -->
-        <div class="skills-card glass-panel">
-          <div class="card-icon">☁️</div>
-          <h3>Cloud & Integration</h3>
-          <ul class="skills-list">
-            <li>Azure OpenAI, Search, & AI Foundry</li>
-            <li>Kubernetes (AKS) & Microservices SaaS</li>
-            <li>Distributed Event Pipelines (Kafka, Service Bus)</li>
-            <li>Azure Document Intelligence & NER</li>
-            <li>Cosmos DB, Redis, SQL Server, PostgreSQL</li>
+        <article class="skills-detail glass-panel">
+          <div class="card-icon">02</div>
+          <h3>Data Science &amp; Traditional AI/ML</h3>
+          <ul class="detail-list">
+            <li><strong>Model Selection &amp; Training:</strong> Practical experience training, evaluating, and deploying traditional ML algorithms, including <strong>XGBoost</strong>, <strong>Support Vector Classifiers (SVC)</strong>, and <strong>Linear Regression</strong>.</li>
+            <li><strong>Fine-Tuning:</strong> Experienced in fine-tuning deep learning models (such as <strong>BERT</strong> and domain-specific LLMs) with custom loss functions and hyperparameters.</li>
+            <li><strong>NLP Preprocessing &amp; Feature Engineering:</strong> Implementing text embeddings, data normalization, acronym resolution, synthetic data generation, and custom noise reduction.</li>
+            <li><strong>Data Cleansing with AI:</strong> Utilizing LLMs and AI tools to augment and denoise small or low-quality datasets, achieving significant accuracy gains (e.g., reaching 80% accuracy on corporate PII classification).</li>
           </ul>
-        </div>
+        </article>
 
-        <!-- Card 4: MLOps & Delivery -->
-        <div class="skills-card glass-panel">
-          <div class="card-icon">⚙️</div>
-          <h3>MLOps & Mng. Strategy</h3>
-          <ul class="skills-list">
-            <li>Azure ML Workspace Automation</li>
-            <li>AutoML Metrics-Driven Model Selection</li>
-            <li>CI/CD pipelines (Azure, AWS, Firebase CLI)</li>
-            <li>Model Context Protocol (MCP) Workflows</li>
-            <li>RFP, Technical Roadmaps & Estimations</li>
+        <article class="skills-detail glass-panel">
+          <div class="card-icon">03</div>
+          <h3>Cloud Architecture &amp; Enterprise Integration (Azure Focus)</h3>
+          <ul class="detail-list">
+            <li><strong>Azure AI &amp; Cognitive Services:</strong> In-depth implementation of <strong>Azure OpenAI</strong>, <strong>Azure AI Search</strong>, <strong>Azure AI Foundry</strong>, <strong>Azure Language Service (NER)</strong>, and <strong>Azure Document Intelligence (DI)</strong>.</li>
+            <li><strong>Azure Data &amp; Infrastructure:</strong> Architecting enterprise-scale solutions using <strong>Azure Blob Storage</strong>, <strong>Cosmos DB</strong>, <strong>Azure Service Bus</strong>, <strong>SQL Server</strong>, <strong>PostgreSQL</strong>, <strong>Redis</strong>, and <strong>API Management</strong>.</li>
+            <li><strong>Microservices &amp; Orchestration:</strong> 7+ years of experience migrating monolithic legacy architectures to microservices SaaS platforms using <strong>Azure Kubernetes Service (AKS)</strong> and Docker.</li>
+            <li><strong>Distributed Data Pipelines:</strong> Designing robust, real-time message integration systems using <strong>Apache Kafka</strong>, <strong>Azure Service Bus</strong>, and <strong>AWS EventBridge</strong> for high-throughput event processing.</li>
           </ul>
-        </div>
+        </article>
+
+        <article class="skills-detail glass-panel">
+          <div class="card-icon">04</div>
+          <h3>MLOps, LLMOps &amp; Automation</h3>
+          <ul class="detail-list">
+            <li><strong>ML Workspace Orchestration:</strong> Managing the full machine learning lifecycle within <strong>Azure ML Workspace</strong>.</li>
+            <li><strong>Pipeline Automation:</strong> Building fully automated pipelines spanning raw data ingestion (Azure Blob Storage) → automated preprocessing → model training and hyperparameter tuning → deployment of managed production endpoints.</li>
+            <li><strong>AutoML &amp; Model Selection:</strong> Utilizing <strong>Azure AutoML</strong> to automate model selection based on performance metrics.</li>
+            <li><strong>CI/CD &amp; CLI Tooling:</strong> Deeply proficient in <strong>Azure CLI</strong>, <strong>Firebase CLI</strong>, <strong>AWS CLI</strong>, and <strong>GitHub CLI</strong> to streamline infrastructure as code (IaC) and deployment pipelines.</li>
+            <li><strong>Model Context Protocol (MCP):</strong> Developing agentic database connections and workflows using the Model Context Protocol to translate natural language into business intelligence queries.</li>
+          </ul>
+        </article>
+
+        <article class="skills-detail glass-panel skills-detail-wide">
+          <div class="card-icon">05</div>
+          <h3>Traditional Software Development</h3>
+          <ul class="detail-list">
+            <li><strong>Programming Languages &amp; Backend Frameworks:</strong> Strong delivery experience with <strong>Python</strong> (including <strong>FastAPI</strong>), <strong>C# / .NET (6/8)</strong>, <strong>Node.js</strong>, and <strong>.NET Web API</strong>.</li>
+            <li><strong>Frontend &amp; Mobile:</strong> <strong>JavaScript</strong>, <strong>TypeScript</strong>, <strong>React.js</strong>, <strong>Next.js</strong>, and <strong>React Native</strong> (Android/iOS), including Firebase-backed consumer apps.</li>
+            <li><strong>Application Foundations:</strong> REST API design; <strong>Azure AD SSO</strong> and <strong>Google Auth</strong>; shared middlewares for logging and global exception handling; <strong>Hangfire</strong> background jobs; Domain-Driven Design (DDD) domain services.</li>
+            <li><strong>Domains &amp; Integrations:</strong> Ecommerce/POCs, payment gateways, and financial software; multi-tenant SaaS (clients, teams, roles); third-party social and ads APIs (Meta, X, YouTube, LinkedIn, TikTok).</li>
+          </ul>
+        </article>
+
+        <article class="skills-detail glass-panel skills-detail-wide">
+          <div class="card-icon">06</div>
+          <h3>Stakeholder Management &amp; Consulting</h3>
+          <ul class="detail-list">
+            <li><strong>RFP &amp; Proposal Preparation:</strong> Experienced in preparing technical proposals, RFP responses, scope documents, and detailed effort estimation models.</li>
+            <li><strong>Architecture Diagrams:</strong> Designing clear, end-to-end system architectures across application, integration, and security layers.</li>
+            <li><strong>Consulting &amp; Leadership:</strong> Proven ability to engage with business, technical, and C-level executive stakeholders to drive AI adoption across diverse domains (including auditing and fintech).</li>
+          </ul>
+        </article>
       </div>
     </section>
 
-    <!-- Projects Section -->
     <section id="projects" class="projects-section scroll-reveal">
       <div class="section-header">
-        <h2 class="section-title">Featured Portfolio</h2>
-        <div class="title-bar"></div>
+        <span class="section-eyebrow">Products &amp; Projects</span>
+        <h2 class="section-title">Selected Work</h2>
+        <p class="section-lead">Detailed profiles covering product scope, audience, compliance, methodology, and engineering contributions.</p>
       </div>
 
-      <!-- Category Filter Tabs -->
       <div class="project-tabs" role="tablist">
-        <button class="tab-btn active" id="tab-all" role="tab" aria-selected="true" aria-controls="project-grid" data-filter="all">All Projects</button>
+        <button class="tab-btn active" id="tab-all" role="tab" aria-selected="true" aria-controls="project-grid" data-filter="all">All</button>
         <button class="tab-btn" id="tab-ai" role="tab" aria-selected="false" aria-controls="project-grid" data-filter="ai">Enterprise AI</button>
-        <button class="tab-btn" id="tab-saas" role="tab" aria-selected="false" aria-controls="project-grid" data-filter="saas">SaaS & Consumer</button>
-        <button class="tab-btn" id="tab-cloud" role="tab" aria-selected="false" aria-controls="project-grid" data-filter="cloud">Cloud & Data</button>
+        <button class="tab-btn" id="tab-saas" role="tab" aria-selected="false" aria-controls="project-grid" data-filter="saas">SaaS &amp; Consumer</button>
+        <button class="tab-btn" id="tab-cloud" role="tab" aria-selected="false" aria-controls="project-grid" data-filter="cloud">Cloud &amp; Platforms</button>
       </div>
 
-      <div class="projects-grid" id="project-grid">
-        <!-- Project 1: Tax Engine -->
-        <div class="project-card glass-panel" data-category="ai">
-          <div class="project-info">
-            <span class="project-badge">FinTech / Tax AI</span>
+      <div class="projects-stack" id="project-grid">
+
+        <!-- 1. Tax Engine -->
+        <article class="project-card glass-panel" data-category="ai">
+          <header class="project-header">
+            <span class="project-badge">FinTech / Tax Compliance &amp; Auditing</span>
             <h3>Tax Transaction Categorization Engine</h3>
-            <p class="project-tagline">Automated Capital Allowances and Profit & Loss classification under UK tax legislation.</p>
-            <div class="project-highlights">
-              <span class="highlight-item">BERT Fine-Tuning & SVC/XGBoost</span>
-              <span class="highlight-item">80% Accuracy on Small Datasets</span>
-              <span class="highlight-item">Hybrid Consensus Majority Voting</span>
-              <span class="highlight-item">Ingestion to Endpoint MLOps</span>
-            </div>
-            <div class="project-tech">
-              <span>Python</span><span>.NET</span><span>Azure ML</span><span>React</span><span>AutoML</span>
-            </div>
-          </div>
-        </div>
+            <p class="project-tagline">Automated Capital Allowances and Detailed Profit &amp; Loss classification for enterprise auditing</p>
+          </header>
+          <dl class="project-meta">
+            <div><dt>Audience</dt><dd>Global Audit &amp; Advisory Firms (UK market)</dd></div>
+            <div><dt>Platforms</dt><dd>Enterprise Cloud (Azure)</dd></div>
+            <div><dt>Tech Stack</dt><dd>Python, .NET, Azure App Service, React, Azure SQL Database</dd></div>
+          </dl>
+          <div class="project-body">
+            <h4>Product Overview &amp; Highlights</h4>
+            <p>An enterprise-grade classification engine built from scratch to automate complex corporate tax categorization workflows under UK tax legislation. The system processes auditing transactions to classify them for tax relief optimization with full explainability.</p>
+            <ul class="detail-list">
+              <li><strong>Detailed Profit &amp; Loss (DPL) Classifier:</strong> Automatically categorizes high-volume DPL transactions into 76 distinct accounting and tax categories.</li>
+              <li><strong>Tangible Fixed Assets (TFA) Capital Allowances Classifier:</strong> Classifies capital additions into appropriate Capital Allowances pools to calculate eligible tax reliefs.</li>
+              <li><strong>Explainable Decisions:</strong> Provides structured reasoning alongside confidence scores for every transaction categorization to facilitate human auditor review.</li>
+              <li><strong>Anonymization Pipeline &amp; Custom Tool:</strong> Built a custom anonymization pipeline and standalone tool utilizing <strong>Azure NER</strong> and <strong>Azure Document Intelligence (DI)</strong> to systematically identify, sanitize, and redact sensitive PII/audit data from raw documents.</li>
+            </ul>
 
-        <!-- Project 2: RAG Engine -->
-        <div class="project-card glass-panel" data-category="ai">
-          <div class="project-info">
-            <span class="project-badge">Knowledge AI</span>
-            <h3>Enterprise Document Q&A & Citation Engine (RAG)</h3>
-            <p class="project-tagline">Scalable Retrieval-Augmented Generation with custom page/clause citation mapping.</p>
-            <div class="project-highlights">
-              <span class="highlight-item">Custom Clause/Page Citation Engine</span>
-              <span class="highlight-item">Pinecone Vector Database</span>
-              <span class="highlight-item">Context-Preserving Chunking Strategies</span>
-              <span class="highlight-item">Resolved System Timeouts on Large Docs</span>
-            </div>
-            <div class="project-tech">
-              <span>Python</span><span>React</span><span>Pinecone</span><span>OpenAI Embeddings</span>
-            </div>
-          </div>
-        </div>
+            <h4>Methodology &amp; AI/ML Implementations</h4>
+            <ul class="detail-list">
+              <li>
+                <strong>Detailed Profit &amp; Loss (DPL) Architecture:</strong>
+                <ul class="detail-list nested">
+                  <li><strong>Traditional ML &amp; Fine-Tuning Experimentation:</strong> Evaluated and experimented with multiple machine learning algorithms including <strong>XGBoost</strong>, <strong>Linear Regression</strong>, and <strong>SVC</strong>, alongside the <strong>fine-tuning of BERT models</strong> using different loss functions and hyperparameters.</li>
+                  <li><strong>Data Augmentation &amp; Cleansing:</strong> Utilized LLMs and AI tools to cleanse, denoise, and enrich a small, low-quality training and test dataset.</li>
+                  <li><strong>Performance Benchmarks:</strong> Achieved <strong>80% accuracy</strong> on classification using the refined, AI-cleansed dataset.</li>
+                  <li><strong>NLP Preprocessing &amp; Feature Engineering:</strong> Developed pipelines for text embeddings, feature engineering, data normalization, acronym/short-form expansion, and custom noise reduction.</li>
+                  <li><strong>Pipeline &amp; MLOps:</strong> Integrated model training and selection using Azure AutoML for final evaluations, deploying the champion model as a live production inference endpoint.</li>
+                </ul>
+              </li>
+              <li>
+                <strong>Tangible Fixed Assets (TFA) Architecture:</strong>
+                <ul class="detail-list nested">
+                  <li>Designed an LLM-based architecture to handle low-volume, high-variability TFA transaction descriptions.</li>
+                  <li>
+                    <strong>Prompt Engineering &amp; Multi-Agent Strategies:</strong>
+                    <ol class="detail-list nested numbered">
+                      <li><em>Single Prompt Approach:</em> Contains detailed definitions and examples for all 6 target Capital Allowances categories.</li>
+                      <li><em>Binary Classifier Prompts:</em> 6 distinct binary yes/no evaluation prompts.</li>
+                      <li><em>Hybrid Consensus Flow:</em> Combines both methods—the single-prompt model returns top 3 predictions. If the confidence score exceeds 80%, the prediction is accepted. If below 80%, it triggers 3 individual yes/no LLM calls for the top 3 candidates. This process runs through a 3x majority voting iteration to yield a highly stable and verified confidence score.</li>
+                    </ol>
+                  </li>
+                </ul>
+              </li>
+            </ul>
 
-        <!-- Project 3: Anonymization -->
-        <div class="project-card glass-panel" data-category="ai">
-          <div class="project-info">
-            <span class="project-badge">Security / Compliance</span>
-            <h3>Custom Document Anonymization Tool</h3>
-            <p class="project-tagline">Custom NLP pipeline for PII sanitization and redaction in financial audits.</p>
-            <div class="project-highlights">
-              <span class="highlight-item">Azure Named Entity Recognition (NER)</span>
-              <span class="highlight-item">Azure Document Intelligence</span>
-              <span class="highlight-item">Coordinate-based PDF Masking</span>
-              <span class="highlight-item">Standalone Library & Service API</span>
-            </div>
-            <div class="project-tech">
-              <span>Python</span><span>FastAPI</span><span>Azure Cognitive Services</span>
-            </div>
+            <h4>Engineering &amp; Development Contributions (Brainchild Project)</h4>
+            <ul class="detail-list">
+              <li><strong>End-to-End Ownership:</strong> Conceived and proposed the project as a personal brainchild, taking full ownership of designing the overall architecture from scratch.</li>
+              <li><strong>Tax Domain &amp; Legislation Engineering:</strong> Reviewed UK tax legislation to identify key regulations and created the 76 DPL categories and 6 TFA Capital Allowances pools.</li>
+              <li><strong>Side Product Development:</strong> Engineered a custom data anonymization pipeline and standalone tool leveraging <strong>Azure NER</strong> and <strong>Azure Document Intelligence (DI)</strong> to redact sensitive client details prior to pipeline ingestion.</li>
+              <li>
+                <strong>Automated Data &amp; MLOps Pipelines:</strong> Created the complete Azure infrastructure utilizing <strong>Azure ML Workspace</strong> and automated the entire workflow:
+                <ul class="detail-list nested">
+                  <li>Ingestion of transaction data into Azure Blob Storage.</li>
+                  <li>Raw data preprocessing, normalization, and acronym resolution.</li>
+                  <li>Automatic model training, hyperparameter tuning, and algorithm/model selection based on performance metrics.</li>
+                  <li>Continuous integration and automated deployment of the final model to a production endpoint on Azure.</li>
+                </ul>
+              </li>
+            </ul>
           </div>
-        </div>
+        </article>
 
-        <!-- Project 4: Database Interface -->
-        <div class="project-card glass-panel" data-category="saas">
-          <div class="project-info">
-            <span class="project-badge">Enterprise Tool</span>
-            <h3>Conversational Database Interface</h3>
-            <p class="project-tagline">Agentic SQL/NoSQL interface translating natural language into explainable insights.</p>
-            <div class="project-highlights">
-              <span class="highlight-item">Model Context Protocol (MCP) Workflows</span>
-              <span class="highlight-item">Natural Language to Query Translation</span>
-              <span class="highlight-item">Step-by-step query reasoning output</span>
-            </div>
-            <div class="project-tech">
-              <span>Python</span><span>React</span><span>MCP</span><span>LLMs</span>
-            </div>
+        <!-- 2. RAG -->
+        <article class="project-card glass-panel" data-category="ai">
+          <header class="project-header">
+            <span class="project-badge">Enterprise AI / Knowledge Management &amp; Auditing</span>
+            <h3>Enterprise Document Q&amp;A &amp; Citation Engine (RAG)</h3>
+            <p class="project-tagline">Scalable Retrieval-Augmented Generation with custom document citation logic for audit compliance</p>
+          </header>
+          <dl class="project-meta">
+            <div><dt>Audience</dt><dd>Internal Auditors and Tax Advisory Teams (UK market)</dd></div>
+            <div><dt>Platforms</dt><dd>Enterprise Cloud (Azure)</dd></div>
+            <div><dt>Tech Stack</dt><dd>Python, React, Pinecone, OpenAI API</dd></div>
+          </dl>
+          <div class="project-body">
+            <h4>Product Overview &amp; Highlights</h4>
+            <p>An enterprise-grade document intelligence and question-answering tool. The system allows auditors to upload large financial documents and ask complex questions, receiving context-aware answers back with precise citations.</p>
+            <ul class="detail-list">
+              <li><strong>Scalable Document Ingestion:</strong> Resolved major system timeouts and processing bottlenecks in a legacy RAG application, allowing it to efficiently handle large audit documentation without timing out.</li>
+              <li><strong>Accurate Source Citations:</strong> Developed a custom citation mapping engine that links generated LLM answers back to exact pages, clauses, and reference text within the original document—a critical compliance capability not supported out of the box.</li>
+              <li><strong>Vector Search &amp; Embedding Framework:</strong> Replaced inefficient in-memory search with <strong>Pinecone Vector Database</strong> and <strong>OpenAI embedding models</strong> to power highly accurate semantic search and retrieval.</li>
+            </ul>
+            <h4>Engineering &amp; Development Contributions</h4>
+            <ul class="detail-list">
+              <li><strong>Legacy Diagnostics:</strong> Conducted a comprehensive code review of the existing RAG tool to identify and isolate performance bottlenecks related to memory usage and API limits.</li>
+              <li><strong>Architectural Redesign &amp; Optimization:</strong> Designed and implemented an alternative, scalable RAG architecture using Pinecone. Researched vector database best practices and engineered a specialized document chunking and overlap strategy to prevent context fragmentation and preserve semantic continuity during search retrieval.</li>
+              <li><strong>Custom Citation Logic:</strong> Designed, prototyped, and engineered the precise page/clause reference attribution algorithms to satisfy auditing requirements.</li>
+            </ul>
           </div>
-        </div>
+        </article>
 
-        <!-- Project 5: Agency Platform -->
-        <div class="project-card glass-panel" data-category="saas">
-          <div class="project-info">
-            <span class="project-badge">Marketing SaaS</span>
-            <h3>Agency Platform (Social Media Automation)</h3>
-            <p class="project-tagline">Self-hosted, multi-tenant platform with LangGraph agents managing social campaigns.</p>
-            <div class="project-highlights">
-              <span class="highlight-item">LangGraph multi-agent orchestration</span>
-              <span class="highlight-item">Brand Safety Guardrails</span>
-              <span class="highlight-item">API integrations (Meta, X, Youtube, LinkedIn)</span>
-              <span class="highlight-item">Unified Inbox with AI-drafted replies</span>
-            </div>
-            <div class="project-tech">
-              <span>Python</span><span>React</span><span>PostgreSQL</span><span>Docker</span>
-            </div>
+        <!-- 3. Agency -->
+        <article class="project-card glass-panel" data-category="saas">
+          <header class="project-header">
+            <span class="project-badge">Business &amp; Marketing SaaS</span>
+            <h3>Agency Platform (Social Media Agency Automation SaaS)</h3>
+            <p class="project-tagline">AI-operated social media management for agencies</p>
+          </header>
+          <dl class="project-meta">
+            <div><dt>Audience</dt><dd>Agencies and operators managing multiple client accounts</dd></div>
+            <div><dt>Platforms</dt><dd>Web (self-hosted, Docker)</dd></div>
+            <div><dt>Tech Stack</dt><dd>Python, React, PostgreSQL</dd></div>
+            <div><dt>Pricing</dt><dd>Local-first, self-hosted licence (bring your own API keys)</dd></div>
+          </dl>
+          <div class="project-body">
+            <h4>Product Overview &amp; Highlights</h4>
+            <p>A self-hosted, multi-tenant platform that lets an agency manage social presence, content, paid ads, and customer messaging for multiple clients from one interface. AI agents handle the repetitive work while humans keep control of anything brand-sensitive or involving ad spend.</p>
+            <ul class="detail-list">
+              <li><strong>Multi-Platform Publishing:</strong> Connect Facebook, Instagram, X (Twitter), and more. Compose, schedule, and publish platform-specific posts, reels, stories, carousels, and threads from one calendar.</li>
+              <li><strong>Unified Inbox:</strong> Every DM, comment, and message request from all connected accounts in a single view, with AI-drafted replies and human approval where it matters.</li>
+              <li><strong>AI Agents with Guardrails:</strong> LangGraph-powered Content, Engagement, Strategy, and Optimization agents, with a brand-safety Guardrails layer and configurable autonomy per client.</li>
+              <li><strong>Campaigns, Approvals &amp; Reporting:</strong> Campaign management with human-in-the-loop approval queues for ad spend, plus per-client analytics and automated reporting.</li>
+            </ul>
+            <h4>Compliance &amp; Privacy</h4>
+            <ul class="detail-list">
+              <li><strong>Multi-Tenant Isolation:</strong> Each client's data is fully separated.</li>
+              <li><strong>Human-in-the-Loop:</strong> Mandatory approval gates for ad spend and brand-sensitive content.</li>
+              <li><strong>Data Protection:</strong> GDPR controller/processor model for client and end-user data.</li>
+              <li><strong>API Guidelines:</strong> Operates on platform APIs under Meta, X, and other platform terms.</li>
+            </ul>
+            <h4>Engineering &amp; Development Contributions</h4>
+            <ul class="detail-list">
+              <li>Market Research &amp; Competitive Analysis</li>
+              <li>Product Roadmap definition</li>
+              <li>Converted Roadmap into features &amp; user stories</li>
+              <li>Created Architectural Diagram, DB Design, Sequence diagrams</li>
+              <li>AI integration: Gemini API, OpenAI API, GLM API</li>
+              <li>API integrations: Meta Graph API (fb + IG), X API, Google Youtube API, LinkedIn API, Tiktok API, Google Ad API, Email Marketing APIs</li>
+              <li>Business Trends, Social Listening, Content generation Ideas</li>
+              <li>Scheduling and automation of content generation &amp; posting</li>
+              <li>Complete implementation using AI tools</li>
+              <li>Security Audit &amp; compliance</li>
+              <li>SaaS features: clients, teams, users, access roles etc.</li>
+            </ul>
           </div>
-        </div>
+        </article>
 
-        <!-- Project 6: Together App -->
-        <div class="project-card glass-panel" data-category="saas">
-          <div class="project-info">
-            <span class="project-badge">Mobile App</span>
+        <!-- 4. Together -->
+        <article class="project-card glass-panel" data-category="saas">
+          <header class="project-header">
+            <span class="project-badge">Health &amp; Wellness</span>
             <h3>Together — Relationship Check-In</h3>
-            <p class="project-tagline">A calm, private-by-design couples health and wellness application.</p>
-            <div class="project-highlights">
-              <span class="highlight-item">Privacy-by-Design UID Scoped Encryption</span>
-              <span class="highlight-item">Structured Conflict Copilot Helper</span>
-              <span class="highlight-item">AI Tone Tuner for Empathy & Clarity</span>
-              <span class="highlight-item">Closed Testing on Google Play Store</span>
-            </div>
-            <div class="project-tech">
-              <span>React Native</span><span>Firebase</span><span>TypeScript</span><span>Node.js</span>
-            </div>
+            <p class="project-tagline">A calm, private rhythm for couples</p>
+          </header>
+          <dl class="project-meta">
+            <div><dt>Audience</dt><dd>Couples, or solo users exploring before a partner joins</dd></div>
+            <div><dt>Platforms</dt><dd>Android, iOS (Currently in Closed Testing)</dd></div>
+            <div><dt>Tech Stack</dt><dd>React Native, JDK, Firebase, JavaScript, TypeScript</dd></div>
+            <div><dt>Pricing</dt><dd>Free tier · 21-day Pro trial · Pro $8.99/couple/month ($79.99/yr) · AI tier $14.99/couple/month (planned)</dd></div>
+          </dl>
+          <div class="project-body">
+            <h4>Product Overview &amp; Highlights</h4>
+            <p>A calm, ad-free couples wellness app built around a weekly rhythm: short check-ins, private reflection, appreciation exchanges, connection bids, and structured repair tools after hard moments. Private by design — individual responses are never shared, only aggregated "pulse" data.</p>
+            <ul class="detail-list">
+              <li><strong>Weekly Check-In &amp; Shared Pulse:</strong> A 90-second weekly check-in surfaces how both partners feel. Individual answers stay private; only an aggregated connection pulse is shared when both partners complete it.</li>
+              <li><strong>Structured Repair Kit:</strong> Three guided modes — Solo reflection, Async Together, and a real-time Conflict Copilot — to de-escalate and reconnect after difficult moments.</li>
+              <li><strong>Private Journal &amp; Appreciation Bank:</strong> Truly private journaling (never shared) plus weekly gratitude deposits that are revealed only when both partners participate.</li>
+              <li><strong>Relationship Vitals &amp; Life Seasons:</strong> A private, non-gamified trends dashboard, with season-aware prompts that adapt to whether you are newlyweds, new parents, in a rough patch, and more.</li>
+              <li><strong>AI-Driven Chat &amp; Tone Tuner:</strong> Real-time AI-powered chat helper that allows partners to rewrite and tune their messages to a specific selected tone (e.g., romantic, respectful, formal, empathetic) to encourage clear and positive relationship communication.</li>
+            </ul>
+            <h4>Compliance &amp; Privacy</h4>
+            <ul class="detail-list">
+              <li><strong>Privacy-by-Design Data Model:</strong> Sensitive responses are strictly UID-scoped.</li>
+              <li><strong>Data Rights:</strong> GDPR &amp; CCPA/CPRA data rights (access, export, and deletion).</li>
+              <li><strong>Control:</strong> In-app account and data deletion controls.</li>
+              <li><strong>Security:</strong> Encrypted in transit and at rest via Google Firebase.</li>
+            </ul>
+            <h4>Engineering &amp; Development Contributions</h4>
+            <ul class="detail-list">
+              <li>Market Research &amp; Competitive Analysis</li>
+              <li>Product Roadmap definition</li>
+              <li>Converted Roadmap into features &amp; user stories</li>
+              <li>Feature exploration &amp; innovative ideas</li>
+              <li>AI integration: Implemented AI-driven chat and message tone tuning features (formal, respectful, romantic, empathetic, etc.)</li>
+              <li>Firebase store, functions &amp; email extensions</li>
+              <li>Google Auth 2.0 integration</li>
+            </ul>
           </div>
-        </div>
+        </article>
 
-        <!-- Project 7: Alice Learner -->
-        <div class="project-card glass-panel" data-category="saas">
-          <div class="project-info">
-            <span class="project-badge">EdTech App</span>
+        <!-- 5. Alice -->
+        <article class="project-card glass-panel" data-category="saas">
+          <header class="project-header">
+            <span class="project-badge">Children &amp; Education</span>
             <h3>Alice's Adventures Learner</h3>
-            <p class="project-tagline">Offline-first immersive literacy application for children ages 5–10.</p>
-            <div class="project-highlights">
-              <span class="highlight-item">Spaced-Repetition Vocabulary Engine</span>
-              <span class="highlight-item">Interactive Phonics Mini-Games</span>
-              <span class="highlight-item">Strict COPPA / GDPR-Kids Compliance</span>
-              <span class="highlight-item">Active on Google Play Store</span>
-            </div>
-            <div class="project-tech">
-              <span>React Native</span><span>Firebase</span><span>JavaScript</span><span>Android SDK</span>
-            </div>
+            <p class="project-tagline">Where reading becomes an adventure</p>
+          </header>
+          <dl class="project-meta">
+            <div><dt>Audience</dt><dd>Children ages 5–10, parents, and primary-school teachers</dd></div>
+            <div><dt>Platforms</dt><dd>Android (Launched on Google Play Store), iOS (Planned)</dd></div>
+            <div><dt>Tech Stack</dt><dd>React Native, JDK, Firebase, JavaScript, TypeScript</dd></div>
+            <div><dt>Pricing</dt><dd>Free tier + one-time premium unlock (~$4.99). No ads, no subscriptions.</dd></div>
+          </dl>
+          <div class="project-body">
+            <h4>Product Overview &amp; Highlights</h4>
+            <p>An immersive, offline-first literacy app for children ages 5–10 built around Lewis Carroll's <em>Alice's Adventures in Wonderland</em>. It blends vocabulary, phonics, and creative play so children experience learning as collecting magic words alongside Alice — guided gently by the White Rabbit.</p>
+            <ul class="detail-list">
+              <li><strong>Wonderland Vocabulary Flashcards:</strong> Every age-appropriate word becomes a collectible card with whimsical art, text-to-speech audio, phonics breakdown, and a sentence from the book — mastered through gentle spaced repetition.</li>
+              <li><strong>Interactive Read-Aloud Story Mode:</strong> The full Alice story across 12 narrated chapters. Tap any word to hear it and open its flashcard, with "Read to Me" and "I'll Read" modes.</li>
+              <li><strong>Six Playful Mini-Games:</strong> Spell the Rabbit Hole, Tea-Party Letters, Sound Pool of Tears, and more — each reinforcing phonics, listening, and recall without ever feeling like a test.</li>
+              <li><strong>Parent Zone &amp; Creative Play:</strong> A gated dashboard for parents, plus Paint the Rose drawing, colouring pages, and a calming Bedtime audiobook mode for the child.</li>
+            </ul>
+            <h4>Compliance &amp; Privacy</h4>
+            <ul class="detail-list">
+              <li><strong>COPPA-Compliant:</strong> No personal data from under-13s collected without verifiable parental consent.</li>
+              <li><strong>GDPR-Kids:</strong> No profiling, no third-party child-tracking SDKs.</li>
+              <li><strong>Google Play "Designed for Families":</strong> No ads in the child area.</li>
+              <li><strong>Offline-first:</strong> Progress stays on the device unless a parent opts into cloud sync.</li>
+            </ul>
           </div>
-        </div>
+        </article>
 
-        <!-- Project 8: Healthcare SaaS -->
-        <div class="project-card glass-panel" data-category="cloud">
-          <div class="project-info">
-            <span class="project-badge">Cloud Architecture</span>
-            <h3>Healthcare Facility Management Platform</h3>
-            <p class="project-tagline">Modernizing a legacy desktop scheduling and HR system into APIs and mobile apps.</p>
-            <div class="project-highlights">
-              <span class="highlight-item">Desktop-to-API business logic extraction</span>
-              <span class="highlight-item">Greenfield SaaS & database redesign</span>
-              <span class="highlight-item">Azure Kubernetes Service (AKS)</span>
-              <span class="highlight-item">Legacy synchronization bridge</span>
-            </div>
-            <div class="project-tech">
-              <span>.NET</span><span>C#</span><span>Azure</span><span>AKS</span><span>Hangfire</span>
-            </div>
+        <!-- 6. Conversational DB -->
+        <article class="project-card glass-panel" data-category="ai">
+          <header class="project-header">
+            <span class="project-badge">Enterprise AI / Conversational BI</span>
+            <h3>Conversational Database Interface</h3>
+            <p class="project-tagline">Agentic SQL/NoSQL interface translating natural language queries into business insights</p>
+          </header>
+          <dl class="project-meta">
+            <div><dt>Audience</dt><dd>Corporate decision-makers and non-technical business users</dd></div>
+            <div><dt>Platforms</dt><dd>Model Context Protocol (MCP) / Python / LLMs</dd></div>
+            <div><dt>Tech Stack</dt><dd>Python, React</dd></div>
+          </dl>
+          <div class="project-body">
+            <h4>Product Overview &amp; Highlights</h4>
+            <p>An Agentic AI application designed to democratize data access. The interface enables non-technical business users to query complex corporate databases (SQL/NoSQL) using natural language, returning structured data, visualizations, and business insights.</p>
+            <ul class="detail-list">
+              <li><strong>Model Context Protocol (MCP) Workflows:</strong> Engineered custom agentic workflows utilizing Model Context Protocol (MCP) sidecars/servers to bridge LLMs with database connections.</li>
+              <li><strong>Natural Language to Query Translation:</strong> Implemented advanced prompt engineering and schema-context mapping to ensure reliable generation of complex database queries.</li>
+              <li><strong>Explainable Data Retrieval:</strong> Provides users with step-by-step query construction, reasoning, and context for the returned insights.</li>
+            </ul>
           </div>
-        </div>
+        </article>
+
+        <!-- 7. Healthcare -->
+        <article class="project-card glass-panel" data-category="cloud">
+          <header class="project-header">
+            <span class="project-badge">Healthcare / Workforce &amp; Facility Operations</span>
+            <h3>Healthcare Facility Management Platform</h3>
+            <p class="project-tagline">Modernizing a legacy desktop facility-management system into APIs and mobile apps for scheduling, staffing, and HR</p>
+          </header>
+          <dl class="project-meta">
+            <div><dt>Client / Delivery</dt><dd>Turing.com client (US market)</dd></div>
+            <div><dt>Audience</dt><dd>Healthcare facilities, clinical operations, and HR/payroll teams</dd></div>
+            <div><dt>Platforms</dt><dd>Microsoft Azure / Mobile (iOS &amp; Android)</dd></div>
+            <div><dt>Tech Stack</dt><dd>.NET, C#, Azure, Azure SQL, Azure App Service, AKS, Hangfire, Azure AD SSO</dd></div>
+          </dl>
+          <div class="project-body">
+            <h4>Project Overview &amp; Highlights</h4>
+            <p>Modernization of an existing healthcare facility management desktop application. Core business logic was extracted and rebuilt as service APIs, with new capabilities spanning workforce scheduling, time cards, shift management, HR, payroll, and operational coordination—delivered through mobile apps alongside the web/API platform.</p>
+            <ul class="detail-list">
+              <li><strong>Desktop-to-API Modernization:</strong> Converted established facility-management business rules from a legacy desktop application into secure, scalable APIs so clients and new apps could share one source of truth.</li>
+              <li><strong>Legacy Sync Bridge:</strong> Kept the desktop app wired into the new SaaS backend during transition so existing workflows continued while the platform was rebuilt.</li>
+              <li><strong>Scheduling, Shifts &amp; Time Cards:</strong> Extended the platform with scheduling workflows, shift assignment/management, and time-card capture to support day-to-day clinical and support staffing.</li>
+              <li><strong>HR, Payroll &amp; Coordination:</strong> Added HR and payroll-aligned features plus coordination tooling so facility teams could manage staffing, approvals, and operational handoffs in one system.</li>
+              <li><strong>Mobile Workforce Access:</strong> Introduced mobile applications so staff and supervisors could manage shifts, time cards, and coordination on the floor—not only from the desktop.</li>
+              <li><strong>SaaS Architecture:</strong> Greenfield SaaS architecture and DB design on Azure (.NET / C#), domain services (DDD), App Service / AKS, Azure SQL, Azure AD SSO, logging/exception middlewares, and Hangfire background jobs.</li>
+            </ul>
+          </div>
+        </article>
+
+        <!-- 8. Anonymization -->
+        <article class="project-card glass-panel" data-category="ai">
+          <header class="project-header">
+            <span class="project-badge">Enterprise AI / Data Privacy &amp; Compliance</span>
+            <h3>Custom Document Anonymization Tool &amp; Data Pipeline</h3>
+            <p class="project-tagline">Custom NLP pipeline for PII sanitization and redaction in financial auditing documents</p>
+          </header>
+          <dl class="project-meta">
+            <div><dt>Audience</dt><dd>Audit teams and compliance officers handling sensitive client records</dd></div>
+            <div><dt>Platforms</dt><dd>Azure (Language Service / Named Entity Recognition / Document Intelligence)</dd></div>
+            <div><dt>Tech Stack</dt><dd>Python, FastAPI</dd></div>
+          </dl>
+          <div class="project-body">
+            <h4>Product Overview &amp; Highlights</h4>
+            <p>A custom-built data privacy tool and automated processing pipeline designed to sanitize and redact sensitive Personally Identifiable Information (PII) and corporate-sensitive details from audit documentation before ingestion into AI training workflows or external APIs.</p>
+            <ul class="detail-list">
+              <li><strong>Azure NER Integration:</strong> Leveraged <strong>Azure Named Entity Recognition (NER)</strong> to automatically identify and classify entities such as names, organizations, locations, and monetary values.</li>
+              <li><strong>Document Intelligence (DI) Extraction:</strong> Integrated <strong>Azure Document Intelligence</strong> (formerly Form Recognizer) to extract text, tables, and structures from PDFs, scans, and spreadsheets, ensuring spatial coordinates are mapped for visual redaction.</li>
+              <li><strong>Scalable Processing Pipeline:</strong> Created an end-to-end processing pipeline that automatically ingests raw documentation, extracts text, performs entity masking/anonymization, and saves sanitized records to secure cloud storage.</li>
+            </ul>
+            <h4>Engineering &amp; Development Contributions</h4>
+            <ul class="detail-list">
+              <li><strong>Tool Creation from Scratch:</strong> Designed and implemented the custom anonymization utility as a standalone library and API service.</li>
+              <li><strong>Redaction Logic:</strong> Developed rule-based and machine-learning-based redaction layers to resolve acronyms, custom enterprise identifiers, and context-specific sensitive terms.</li>
+              <li><strong>Integration:</strong> Integrated the anonymization pipeline directly into the upstream data collection and ML training pipelines of the firm's auditing solutions.</li>
+            </ul>
+          </div>
+        </article>
+
       </div>
     </section>
 
-    <!-- Experience Section (Timeline) -->
     <section id="experience" class="experience-section scroll-reveal">
       <div class="section-header">
-        <h2 class="section-title">Professional Experience</h2>
-        <div class="title-bar"></div>
+        <span class="section-eyebrow">Career</span>
+        <h2 class="section-title">Work Experience</h2>
+        <p class="section-lead">Roles across AI architecture, SaaS modernization, multi-client delivery, and defence systems.</p>
       </div>
 
       <div class="timeline">
-        <!-- Job 1 -->
         <div class="timeline-item">
           <div class="timeline-dot"></div>
-          <div class="timeline-date">Jan 2025 - Present</div>
+          <div class="timeline-date">January 2025 – Present</div>
           <div class="timeline-content glass-panel">
             <h3>Principal Software Engineer</h3>
-            <span class="company">10Pearls Pakistan (International Clients)</span>
-            <p class="role-desc">Leading technical architecture and engineering strategy for enterprise AI and cloud implementations.</p>
-            <ul>
-              <li>Architect enterprise RAG platforms, LangGraph agent workflows, and database interfaces (MCP).</li>
-              <li>Build automated MLOps pipelines in Azure ML, handling ingest to production managed endpoints.</li>
-              <li>Translate complex business needs into data preparation strategies, feature engineering, and AutoML modeling.</li>
+            <span class="company">10Pearls Pakistan · Karachi, PK (International Clients)</span>
+            <ul class="detail-list">
+              <li><strong>Technical Architecture &amp; Strategy:</strong> Lead technical architecture and engineering strategy for enterprise AI and cloud projects across international clients.</li>
+              <li><strong>AI Solution Design:</strong> Architect enterprise RAG platforms, Agentic AI workflows, and conversational AI systems using Azure AI Search, Azure AI Foundry, Pinecone, and OpenAI APIs.</li>
+              <li><strong>End-to-End ML Ownership:</strong> Translate complex domain requirements into technical architectures, overseeing data sources, data pipelines, and production deployment.</li>
+              <li><strong>MLOps &amp; LLMOps Pipeline Automation:</strong> Build automated MLOps and LLMOps pipelines in the Azure ML Workspace, managing the lifecycle from preprocessing triggers through to managed endpoint deployment.</li>
+              <li><strong>Data Science Initiatives:</strong> Drive data science initiatives by producing data quality reports, refining feature engineering, and utilizing Azure AutoML.</li>
             </ul>
           </div>
         </div>
 
-        <!-- Job 2 -->
         <div class="timeline-item">
           <div class="timeline-dot"></div>
-          <div class="timeline-date">Jul 2022 - Jan 2025</div>
+          <div class="timeline-date">July 2022 – January 2025</div>
           <div class="timeline-content glass-panel">
             <h3>Technical Lead</h3>
-            <span class="company">Turing.com (Contract)</span>
-            <p class="role-desc">Architected SaaS modernizations and led delivery for US clients.</p>
-            <ul>
-              <li>Migrated a desktop-monolith healthcare management system into clean REST APIs and modular microservices on AKS.</li>
-              <li>Created the synchronization bridge enabling live synchronization of the legacy client and cloud backend.</li>
-              <li>Implemented domain services (DDD) for scheduling, shifts, time cards, and HR payroll integration.</li>
+            <span class="company">Turing.com (Contract) · Remote, US</span>
+            <ul class="detail-list">
+              <li><strong>Client Healthcare Facility Platform (from scratch):</strong> Owned solution creation for a US healthcare client's facility-management product—revamped the tech stack, stood up the core SaaS architecture and database design, and built/led the engineering team to deliver it.</li>
+              <li><strong>Legacy Integration &amp; Continuity:</strong> Took ownership of the legacy desktop codebase and initially integrated it with the new SaaS backend so operations stayed in sync while modernization progressed.</li>
+              <li><strong>Domain-Driven Architecture:</strong> Broke the system into domain services following Domain-Driven Design, establishing clear bounded contexts for scheduling, time cards, shifts, HR, payroll, and coordination.</li>
+              <li><strong>Identity &amp; Platform Foundations:</strong> Implemented authentication with Azure AD SSO, plus shared middlewares for enriched logging and global exception handling.</li>
+              <li><strong>Background Processing:</strong> Introduced Hangfire to run reliable background jobs across the platform.</li>
+              <li><strong>Cloud Delivery:</strong> Designed application, integration, and infrastructure layers on Azure (App Service, AKS, Azure SQL).</li>
             </ul>
           </div>
         </div>
 
-        <!-- Job 3 -->
         <div class="timeline-item">
           <div class="timeline-dot"></div>
-          <div class="timeline-date">Sep 2020 - Apr 2022</div>
+          <div class="timeline-date">September 2020 – April 2022</div>
           <div class="timeline-content glass-panel">
             <h3>Senior Software Engineer</h3>
-            <span class="company">VentureDive</span>
-            <p class="role-desc">Built enterprise products and real-time distributed data pipelines.</p>
-            <ul>
-              <li>Created robust asynchronous pipelines utilizing Apache Kafka, Azure Service Bus, and AWS EventBridge.</li>
-              <li>Designed payment gateways and ecommerce features for platforms like Daraz and PayActiv.</li>
-              <li>Drove performance audits and SQL query optimizations to support high transaction volumes.</li>
+            <span class="company">VentureDive (Contractor) · Remote</span>
+            <ul class="detail-list">
+              <li><strong>Multi-Client Delivery:</strong> Worked as a contractor across multiple clients including <strong>Daraz</strong>, <strong>Motiv</strong>, and <strong>PayActiv</strong>, spanning ecommerce ideas/POCs, payment gateways, and financial software.</li>
+              <li><strong>Ecommerce &amp; POCs:</strong> Prototyped and delivered ecommerce concepts and proof-of-concepts to validate product and technical direction for client stakeholders.</li>
+              <li><strong>Payments &amp; Financial Systems:</strong> Built and integrated payment gateway flows and financial software features for client platforms.</li>
+              <li><strong>Performance Optimization &amp; Audit:</strong> Drove performance optimization and technical audits to improve reliability, scalability, and operational health.</li>
+              <li><strong>Stack &amp; Integrations:</strong> Delivered solutions using .NET, Node.js, PostgreSQL, and event-driven architectures, including data pipelines and integrations with Kafka, Azure Service Bus, and AWS EventBridge.</li>
             </ul>
           </div>
         </div>
 
-        <!-- Job 4 -->
         <div class="timeline-item">
           <div class="timeline-dot"></div>
-          <div class="timeline-date">Oct 2017 - Aug 2020</div>
+          <div class="timeline-date">October 2017 – August 2020</div>
           <div class="timeline-content glass-panel">
             <h3>Senior Software Engineer</h3>
-            <span class="company">Stingray Technologies</span>
-            <p class="role-desc">Developed distributed systems and simulators for heavy industrial/defence equipment.</p>
-            <ul>
-              <li>Engineered a real-time message routing architecture capable of processing thousands of inputs per second.</li>
-              <li>Built validation simulators using C#, MongoDB, and high-performance custom data protocols.</li>
+            <span class="company">Stingray Technologies (Pvt) Ltd · Karachi, PK</span>
+            <ul class="detail-list">
+              <li><strong>Defence Equipment Software Systems:</strong> Built and evolved software systems for defence equipment—started as a developer and grew into ownership of core system development.</li>
+              <li><strong>Real-Time Distributed Architecture:</strong> Owned the core platform built on a distributed architecture that depended on efficient delivery of thousands of real-time messages under strict performance constraints.</li>
+              <li><strong>Simulators:</strong> Developed and maintained simulators used to exercise, validate, and support the defence equipment systems.</li>
+              <li><strong>Stack &amp; Delivery:</strong> Delivered distributed, CPU-intensive systems and APIs using C#, SQL, and MongoDB.</li>
             </ul>
           </div>
         </div>
 
-        <!-- Job 5 -->
         <div class="timeline-item">
           <div class="timeline-dot"></div>
-          <div class="timeline-date">Dec 2016 - Oct 2017</div>
+          <div class="timeline-date">December 2016 – October 2017</div>
           <div class="timeline-content glass-panel">
             <h3>Software Engineer</h3>
-            <span class="company">Techlogix</span>
-            <p class="role-desc">Developed scalable enterprise backend services.</p>
-            <ul>
-              <li>Built robust Web APIs and stored procedures using .NET Framework and SQL Server.</li>
+            <span class="company">Techlogix · Karachi, PK</span>
+            <ul class="detail-list">
+              <li><strong>Enterprise Scalability:</strong> Developed highly scalable enterprise solutions for local and international clients, utilizing .NET Web API and SQL Server.</li>
             </ul>
           </div>
         </div>
       </div>
     </section>
 
-    <!-- Education Section -->
     <section id="education" class="education-section scroll-reveal">
       <div class="section-header">
+        <span class="section-eyebrow">Credentials</span>
         <h2 class="section-title">Education</h2>
-        <div class="title-bar"></div>
       </div>
       <div class="education-card glass-panel">
-        <div class="edu-icon">🎓</div>
+        <div class="edu-icon">BE</div>
         <div class="edu-info">
           <h3>Bachelor of Engineering (Computer Engineering)</h3>
           <span class="school">NED University of Engineering and Technology</span>
-          <span class="year">Graduated 2016 · CGPA: 3.86 / 4.00</span>
+          <span class="year">2013 – 2016 · CGPA 3.86 / 4.00</span>
         </div>
       </div>
     </section>
 
-    <!-- Contact Section -->
     <section id="contact" class="contact-section scroll-reveal">
       <div class="section-header">
+        <span class="section-eyebrow">Contact</span>
         <h2 class="section-title">Get In Touch</h2>
-        <div class="title-bar"></div>
+        <p class="section-lead">Open to consulting and lead engineering opportunities in enterprise AI and cloud architecture.</p>
       </div>
 
       <div class="contact-container">
-        <!-- Info Panel -->
         <div class="contact-info-panel glass-panel">
-          <h3>Let's Collaborate</h3>
-          <p>Whether you're looking to architect a new Generative AI platform, automate MLOps workflows, or design secure cloud microservices, I am open to consulting and lead engineering opportunities.</p>
-          
+          <h3>Let's collaborate</h3>
+          <p>Whether you need a Generative AI platform, MLOps automation, or cloud microservices design, I can help shape the architecture and take it to production.</p>
+
           <div class="contact-details">
             <div class="detail-item">
-              <span class="icon">📍</span>
+              <span class="icon">Location</span>
               <div>
                 <h4>Location</h4>
-                <p>Karachi, Sindh, Pakistan (Open to Remote / Hybrid)</p>
+                <p>Karachi, Sindh, Pakistan</p>
               </div>
             </div>
             <div class="detail-item">
-              <span class="icon">✉️</span>
+              <span class="icon">Phone</span>
+              <div>
+                <h4>Phone</h4>
+                <p><a href="tel:+923323919193" id="contact-phone-link">+92 332 3919193</a></p>
+              </div>
+            </div>
+            <div class="detail-item">
+              <span class="icon">Email</span>
               <div>
                 <h4>Email</h4>
                 <p><a href="mailto:nksherani@outlook.com" id="contact-email-link">nksherani@outlook.com</a></p>
               </div>
             </div>
             <div class="detail-item">
-              <span class="icon">🔗</span>
+              <span class="icon">LinkedIn</span>
               <div>
                 <h4>LinkedIn</h4>
                 <p><a href="https://linkedin.com/in/naveed-ahmed-96b45552" target="_blank" rel="noopener" id="contact-linkedin-link">linkedin.com/in/naveed-ahmed-96b45552</a></p>
@@ -439,16 +599,15 @@
           </div>
         </div>
 
-        <!-- Form Panel -->
         <div class="contact-form-panel glass-panel">
           <form id="contact-form" action="#" method="POST">
             <div class="form-group">
               <label for="form-name">Name</label>
-              <input type="text" id="form-name" name="name" required placeholder="John Doe">
+              <input type="text" id="form-name" name="name" required placeholder="Your name">
             </div>
             <div class="form-group">
               <label for="form-email">Email</label>
-              <input type="email" id="form-email" name="email" required placeholder="john@example.com">
+              <input type="email" id="form-email" name="email" required placeholder="you@company.com">
             </div>
             <div class="form-group">
               <label for="form-message">Message</label>
@@ -465,11 +624,10 @@
   <footer class="footer">
     <div class="footer-content">
       <p>&copy; 2026 Naveed Ahmed. All Rights Reserved.</p>
-      <p>Built with Vanilla HTML, CSS, and JS. Ready for Vercel.</p>
+      <p>Principal Software Engineer · AI Solution Architect</p>
     </div>
   </footer>
 
-  <!-- Scripts -->
   <script src="script.js"></script>
 </body>
 </html>
