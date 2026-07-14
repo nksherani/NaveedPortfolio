@@ -1,0 +1,36 @@
+Role Overview
+
+We are looking for an experienced AI Solution Architect. The candidate should have strong understanding of Data Science, AI/ML, Generative AI, Agentic AI, cloud architecture, enterprise integrations, and AI systems development. The role requires someone who can understand business problems, convert them into practical AI solutions, design end-to-end architectures, and engage confidently with business and technical stakeholders.
+
+Key Responsibilities
+
+Lead solutioning for ML, Generative AI, Agentic AI, RAG, and AI automation use cases.
+Design end-to-end AI architectures covering data sources, data pipelines, AI models, APIs, integrations, application components, security, governance, monitoring, and deployment.
+Collaborate with AI, Cloud, Software Engineering, Integration, and Delivery teams to ensure proposed solutions are practical and implementable.
+Guide delivery teams during project initiation, design, build, testing, deployment, and handover.
+Required Skills
+
+8+ years of experience in technology, Data Science and AI.
+Practical experience in Data Science and AI systems development, including data preparation, feature engineering, model development, model evaluation, APIs, deployment, and production monitoring.
+Strong understanding of AI/ML use cases such as churn, segmentation, forecasting, recommendation, fraud detection, anomaly detection, risk scoring, and optimization.
+Good understanding of GenAI concepts including LLMs, prompt engineering, embeddings, vector search, RAG, agents, tool calling, guardrails, evaluation, and LLMOps.
+Experience in enterprise solution architecture across application, data, integration, infrastructure, security, and monitoring layers.
+Ability to prepare technical proposals, RFP responses, architecture diagrams, scope documents, and effort estimates.
+Strong communication and consulting skills with the ability to engage business, technical, and executive stakeholders.
+Preferred Skills
+
+Experience with Azure AI services such as Azure OpenAI, Azure AI Foundry, Azure AI Search, Azure ML, Document Intelligence, API Management, Cosmos DB, Redis, and Azure Monitor.
+Exposure to MLOps / LLMOps tools such as MLflow, Kubeflow, Databricks, Azure ML, or OpenShift AI.
+Experience with vector databases such as Azure AI Search, Qdrant, Milvus, Pinecone, or FAISS.
+Experience developing AI-enabled applications, APIs, backend services, workflow automation, or production-grade AI components.
+Experience in banking, telecom, government, or enterprise AI use cases.
+
+
+
+Requirements added by the job poster
+
+• 5+ years of work experience with Local LLMs
+
+• 5+ years of work experience with Microsoft Azure
+
+• 5+ years of work experience with MLOps

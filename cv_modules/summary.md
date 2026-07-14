@@ -1,0 +1,3 @@
+# Professional Summary
+
+Principal Software Engineer and AI Solution Architect with 9+ years of experience in software architecture, including 7 years of deep expertise in Microsoft Azure cloud services and 1.5 years of specialized, hands-on experience in AI and MLOps. Proven ability to translate complex business problems into practical AI solutions, leading end-to-end delivery from data preparation and feature engineering to model training, deployment, and production monitoring. Deeply experienced in Generative AI, Agentic AI, RAG, and LLMs (including Local LLMs). Highly proficient in creating RFP responses, technical roadmaps, and engaging with technical and executive stakeholders to drive AI adoption across diverse domains.
