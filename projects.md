@@ -9,6 +9,7 @@ Detailed profiles of key products, outlining product specifications, target audi
 **Category:** FinTech / Tax Compliance & Auditing
 **Target Audience:** Global Audit & Advisory Firms (UK market)
 **Platforms:** Enterprise Cloud (Azure)
+**Tech Stack:** Python, .NET, Azure App Service, React, Azure SQL Database
 
 ### Product Overview & Highlights
 An enterprise-grade classification engine built from scratch to automate complex corporate tax categorization workflows under UK tax legislation. The system processes auditing transactions to classify them for tax relief optimization with full explainability.
@@ -47,7 +48,8 @@ An enterprise-grade classification engine built from scratch to automate complex
 **Tagline:** Scalable Retrieval-Augmented Generation with custom document citation logic for audit compliance
 **Category:** Enterprise AI / Knowledge Management & Auditing
 **Target Audience:** Internal Auditors and Tax Advisory Teams (UK market)
-**Platforms:** Enterprise Cloud (Azure / Pinecone / OpenAI API)
+**Platforms:** Enterprise Cloud (Azure)
+**Tech Stack:** Python, React, Pinecone, OpenAI API
 
 ### Product Overview & Highlights
 An enterprise-grade document intelligence and question-answering tool. The system allows auditors to upload large financial documents and ask complex questions, receiving context-aware answers back with precise citations.
@@ -67,6 +69,7 @@ An enterprise-grade document intelligence and question-answering tool. The syste
 **Category:** Business & Marketing SaaS
 **Target Audience:** Agencies and operators managing multiple client accounts
 **Platforms:** Web (self-hosted, Docker)
+**Tech Stack:** Python, React, PostgreSQL
 **Pricing:** Local-first, self-hosted licence (bring your own API keys)
 
 ### Product Overview & Highlights
@@ -102,6 +105,7 @@ A self-hosted, multi-tenant platform that lets an agency manage social presence,
 **Category:** Health & Wellness
 **Target Audience:** Couples, or solo users exploring before a partner joins
 **Platforms:** Android, iOS (Currently in Closed Testing)
+**Tech Stack:** React Native, JDK, Firebase, JavaScript, TypeScript
 **Pricing:** Free tier · 21-day Pro trial · Pro $8.99/couple/month ($79.99/yr) · AI tier $14.99/couple/month (planned)
 
 ### Product Overview & Highlights
@@ -134,6 +138,7 @@ A calm, ad-free couples wellness app built around a weekly rhythm: short check-i
 **Category:** Children & Education
 **Target Audience:** Children ages 5–10, parents, and primary-school teachers
 **Platforms:** Android (Launched on Google Play Store), iOS (Planned)
+**Tech Stack:** React Native, JDK, Firebase, JavaScript, TypeScript
 **Pricing:** Free tier + one-time premium unlock (~$4.99). No ads, no subscriptions.
 
 ### Product Overview & Highlights
@@ -148,3 +153,55 @@ An immersive, offline-first literacy app for children ages 5–10 built around L
 - **GDPR-Kids:** No profiling, no third-party child-tracking SDKs.
 - **Google Play "Designed for Families":** No ads in the child area.
 - **Offline-first:** Progress stays on the device unless a parent opts into cloud sync.
+
+---
+
+## 6. Conversational Database Interface
+**Tagline:** Agentic SQL/NoSQL interface translating natural language queries into business insights
+**Category:** Enterprise AI / Conversational BI (Business Intelligence)
+**Target Audience:** Corporate decision-makers and non-technical business users
+**Platforms:** Model Context Protocol (MCP) / Python / LLMs
+**Tech Stack:** Python, React
+
+### Product Overview & Highlights
+An Agentic AI application designed to democratize data access. The interface enables non-technical business users to query complex corporate databases (SQL/NoSQL) using natural language, returning structured data, visualizations, and business insights.
+- **Model Context Protocol (MCP) Workflows:** Engineered custom agentic workflows utilizing Model Context Protocol (MCP) sidecars/servers to bridge LLMs with database connections.
+- **Natural Language to Query Translation:** Implemented advanced prompt engineering and schema-context mapping to ensure reliable generation of complex database queries.
+- **Explainable Data Retrieval:** Provides users with step-by-step query construction, reasoning, and context for the returned insights.
+
+---
+
+## 7. Healthcare Facility Management Platform
+**Tagline:** Modernizing a legacy desktop facility-management system into APIs and mobile apps for scheduling, staffing, and HR
+**Category:** Healthcare / Workforce & Facility Operations
+**Target Audience:** Healthcare facilities, clinical operations, and HR/payroll teams (US market client)
+**Platforms:** Microsoft Azure / Mobile (iOS & Android)
+**Tech Stack:** .NET, C#, Azure, Azure SQL, Azure App Service, AKS
+
+### Project Overview & Highlights
+Modernization of an existing healthcare facility management desktop application. Core business logic was extracted and rebuilt as service APIs, with new capabilities spanning workforce scheduling, time cards, shift management, HR, payroll, and operational coordination—delivered through mobile apps alongside the web/API platform.
+- **Desktop-to-API Modernization:** Converted established facility-management business rules from a legacy desktop application into secure, scalable APIs so clients and new apps could share one source of truth.
+- **Scheduling, Shifts & Time Cards:** Extended the platform with scheduling workflows, shift assignment/management, and time-card capture to support day-to-day clinical and support staffing.
+- **HR, Payroll & Coordination:** Added HR and payroll-aligned features plus coordination tooling so facility teams could manage staffing, approvals, and operational handoffs in one system.
+- **Mobile Workforce Access:** Introduced mobile applications so staff and supervisors could manage shifts, time cards, and coordination on the floor—not only from the desktop.
+- **Architecture & Delivery:** Evolved the rewritten services toward a modular, cloud-hosted microservices style on Azure (.NET / C#), deployed via App Service and AKS with Azure SQL, improving reliability and enabling iterative feature delivery.
+
+---
+
+## 8. Custom Document Anonymization Tool & Data Pipeline
+**Tagline:** Custom NLP pipeline for PII sanitization and redaction in financial auditing documents
+**Category:** Enterprise AI / Data Privacy & Compliance
+**Target Audience:** Audit teams and compliance officers handling sensitive client records
+**Platforms:** Azure (Language Service / Named Entity Recognition / Document Intelligence)
+**Tech Stack:** Python, FastAPI
+
+### Product Overview & Highlights
+A custom-built data privacy tool and automated processing pipeline designed to sanitize and redact sensitive Personally Identifiable Information (PII) and corporate-sensitive details from audit documentation before ingestion into AI training workflows or external APIs.
+- **Azure NER Integration:** Leveraged **Azure Named Entity Recognition (NER)** to automatically identify and classify entities such as names, organizations, locations, and monetary values.
+- **Document Intelligence (DI) Extraction:** Integrated **Azure Document Intelligence** (formerly Form Recognizer) to extract text, tables, and structures from PDFs, scans, and spreadsheets, ensuring spatial coordinates are mapped for visual redaction.
+- **Scalable Processing Pipeline:** Created an end-to-end processing pipeline that automatically ingests raw documentation, extracts text, performs entity masking/anonymization, and saves sanitized records to secure cloud storage.
+
+### Engineering & Development Contributions
+- **Tool Creation from Scratch:** Designed and implemented the custom anonymization utility as a standalone library and API service.
+- **Redaction Logic:** Developed rule-based and machine-learning-based redaction layers to resolve acronyms, custom enterprise identifiers, and context-specific sensitive terms.
+- **Integration:** Integrated the anonymization pipeline directly into the upstream data collection and ML training pipelines of the firm's auditing solutions.
