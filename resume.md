@@ -1,7 +1,7 @@
 # Naveed Ahmed
 **Principal Software Engineer | AI Solution Architect**  
 Karachi, Sindh, Pakistan | +92 332 3919193 | nksherani@outlook.com  
-[linkedin.com/in/naveed-ahmed-96b45552](https://linkedin.com/in/naveed-ahmed-96b45552)
+[linkedin.com/in/naveed-ahmed-96b45552](https://linkedin.com/in/naveed-ahmed-96b45552) | [Portfolio](https://naveed-portfolio-rho.vercel.app/)
 
 ---
 
