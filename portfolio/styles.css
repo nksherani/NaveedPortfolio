@@ -921,10 +921,13 @@
         }
       }
 
+      /* Use a short entry length so tall sections (Projects) reach full
+         opacity as soon as their top enters — not scrubbed across the
+         whole element height (which left headers looking washed out). */
       .scroll-reveal {
-        animation: reveal-in auto linear backwards;
+        animation: reveal-in ease-out both;
         animation-timeline: view();
-        animation-range: entry 5% cover 25%;
+        animation-range: entry 0% entry 140px;
       }
     }
   }

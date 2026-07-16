@@ -152,6 +152,7 @@ document.addEventListener('DOMContentLoaded', () => {
   }
 
   // 6. Progressive Enhancement: Fallback scroll animations for browsers without native CSS scroll timelines
+  // threshold 0 fires as soon as any part is visible — important for tall sections like Projects
   if (!CSS.supports('(animation-timeline: view()) and (animation-range: entry)')) {
     const revealObserver = new IntersectionObserver(
       (entries) => {
@@ -159,18 +160,17 @@ document.addEventListener('DOMContentLoaded', () => {
           if (entry.isIntersecting) {
             entry.target.style.opacity = '1';
             entry.target.style.transform = 'translateY(0)';
-            revealObserver.unobserve(entry.target); // Animate once
+            revealObserver.unobserve(entry.target);
           }
         });
       },
       {
-        rootMargin: '0px 0px -10% 0px', // Trigger slightly before coming fully into view
-        threshold: 0.15
+        rootMargin: '0px 0px -5% 0px',
+        threshold: 0
       }
     );
 
     document.querySelectorAll('.scroll-reveal').forEach((el) => {
-      // Set initial styles for fallback browsers
       el.style.opacity = '0';
       el.style.transform = 'translateY(30px)';
       el.style.transition = 'opacity 0.6s cubic-bezier(0.16, 1, 0.3, 1), transform 0.6s cubic-bezier(0.16, 1, 0.3, 1)';
