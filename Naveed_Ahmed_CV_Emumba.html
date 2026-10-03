@@ -1,0 +1,516 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Naveed Ahmed — Senior AI Engineer</title>
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
+
+  @page {
+    size: A4;
+    margin: 12mm 14mm;
+  }
+
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+  body {
+    font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+    color: #1e293b;
+    background: #ffffff;
+    font-size: 8.9pt;
+    line-height: 1.4;
+    -webkit-print-color-adjust: exact;
+    print-color-adjust: exact;
+  }
+
+  .cv-page {
+    width: 100%;
+    margin: 0 auto;
+    page-break-after: always;
+    break-after: page;
+  }
+
+  .cv-page:last-child {
+    page-break-after: avoid;
+    break-after: avoid;
+  }
+
+  /* HEADER */
+  .header {
+    margin-bottom: 10px;
+    padding-bottom: 8px;
+  }
+
+  .header h1 {
+    font-size: 21pt;
+    font-weight: 700;
+    color: #0f172a;
+    letter-spacing: -0.4px;
+    line-height: 1.15;
+  }
+
+  .header .title {
+    font-size: 10.5pt;
+    font-weight: 600;
+    color: #4338ca;
+    margin-top: 3px;
+  }
+
+  .contact-row {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 4px 14px;
+    margin-top: 7px;
+    font-size: 8.8pt;
+    color: #475569;
+  }
+
+  .contact-row a {
+    color: #4338ca;
+    text-decoration: none;
+  }
+
+  .contact-row a:hover {
+    text-decoration: underline;
+  }
+
+  hr {
+    border: none;
+    border-top: 1.2px solid #cbd5e1;
+    margin: 9px 0;
+  }
+
+  hr.thin {
+    border: none;
+    border-top: 1px solid #f1f5f9;
+    margin: 6px 0;
+  }
+
+  /* SECTION HEADERS */
+  h2.section-header {
+    font-size: 10.2pt;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.8px;
+    color: #4338ca;
+    border-bottom: 1.5px solid #e0e7ff;
+    padding-bottom: 3px;
+    margin-top: 6px;
+    margin-bottom: 8px;
+    page-break-after: avoid;
+    break-after: avoid;
+  }
+
+  /* SUMMARY */
+  .summary-text {
+    font-size: 9.1pt;
+    line-height: 1.48;
+    color: #334155;
+    text-align: justify;
+    margin-bottom: 4px;
+  }
+
+  /* SKILLS */
+  .skill-category {
+    margin-bottom: 8px;
+    page-break-inside: avoid;
+    break-inside: avoid;
+  }
+
+  h3.section-cat {
+    font-size: 9.3pt;
+    font-weight: 700;
+    color: #1e293b;
+    margin-top: 6px;
+    margin-bottom: 4px;
+    border-left: 3px solid #4338ca;
+    padding-left: 6px;
+    line-height: 1.2;
+    page-break-after: avoid;
+    break-after: avoid;
+  }
+
+  .skills-grid {
+    display: flex;
+    flex-direction: column;
+    gap: 3.5px;
+    padding-left: 4px;
+  }
+
+  .skill-group {
+    font-size: 8.8pt;
+    line-height: 1.42;
+    color: #334155;
+  }
+
+  .skill-group .label {
+    font-weight: 600;
+    color: #0f172a;
+  }
+
+  /* WORK EXPERIENCE */
+  .job {
+    margin-bottom: 8.5px;
+    page-break-inside: avoid;
+    break-inside: avoid;
+  }
+
+  .job-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    margin-bottom: 2px;
+  }
+
+  .job-title {
+    font-size: 9.8pt;
+    font-weight: 700;
+    color: #0f172a;
+  }
+
+  .job-company {
+    font-size: 9.1pt;
+    font-weight: 600;
+    color: #4338ca;
+  }
+
+  .job-meta {
+    font-size: 8.6pt;
+    color: #64748b;
+    font-weight: 500;
+    white-space: nowrap;
+    text-align: right;
+  }
+
+  ul.bullet-list {
+    margin-top: 2px;
+    margin-bottom: 0;
+    padding-left: 17px;
+  }
+
+  ul.bullet-list li {
+    font-size: 8.8pt;
+    line-height: 1.38;
+    margin-bottom: 2.2px;
+    color: #334155;
+    text-align: justify;
+  }
+
+  /* PROJECTS */
+  .project {
+    margin-bottom: 8.5px;
+    page-break-inside: avoid;
+    break-inside: avoid;
+  }
+
+  .project-title {
+    font-size: 9.6pt;
+    font-weight: 700;
+    color: #0f172a;
+    line-height: 1.25;
+  }
+
+  .project-stack {
+    font-size: 8.5pt;
+    color: #64748b;
+    font-style: italic;
+    margin-top: 1px;
+    margin-bottom: 3px;
+  }
+
+  /* EDUCATION */
+  .edu-block {
+    margin-top: 4px;
+    page-break-inside: avoid;
+    break-inside: avoid;
+  }
+
+  .edu-title {
+    font-weight: 700;
+    font-size: 9.6pt;
+    color: #0f172a;
+  }
+
+  .edu-meta {
+    font-size: 8.9pt;
+    color: #475569;
+    margin-top: 2px;
+  }
+
+  strong {
+    color: #0f172a;
+    font-weight: 600;
+  }
+</style>
+</head>
+<body>
+
+  <!-- ==================== PAGE 1: HEADER, SUMMARY, SKILLS ==================== -->
+  <div class="cv-page" id="page-1">
+    
+    <!-- HEADER -->
+    <div class="header">
+      <h1>Naveed Ahmed</h1>
+      <div class="title">Senior AI Engineer &nbsp;|&nbsp; Backend &amp; Production AI Systems</div>
+      <div class="contact-row">
+        <span>📍 Karachi, Pakistan</span>
+        <span>📞 +92 332 3919193</span>
+        <span>✉️ <a href="mailto:nksherani@outlook.com">nksherani@outlook.com</a></span>
+        <span>🔗 <a href="https://linkedin.com/in/naveed-ahmed-96b45552" target="_blank">linkedin.com/in/naveed-ahmed-96b45552</a></span>
+        <span>🌐 <a href="https://naveed-portfolio-rho.vercel.app/" target="_blank">naveed-portfolio-rho.vercel.app</a></span>
+      </div>
+    </div>
+
+    <hr>
+
+    <!-- PROFESSIONAL SUMMARY -->
+    <h2 class="section-header">Professional Summary</h2>
+    <p class="summary-text">
+      Senior AI Engineer and Backend Architect with <strong>9+ years of hands-on software delivery</strong> and <strong>1.5+ years of deep, production-focused AI and ML engineering</strong>. Primary backend engineering background is in <strong>C# / .NET</strong> — building distributed, event-driven, and cloud-native SaaS systems at scale — with Python applied specifically across all AI/ML, data pipeline, and scripting work. Proven track record of owning AI products end-to-end: from data ingestion and embedding strategies through to managed inference endpoints, real-time monitoring, and CI/CD automation. Hands-on experience across both <strong>AWS</strong> (Lambda, SQS, SNS, S3, API Gateway, CloudWatch, EventBridge) and <strong>Azure</strong> (Azure OpenAI, Azure ML Workspace, AKS, Azure AI Foundry), with strong grounding in Kubernetes, event-driven architectures, and MLOps.
+    </p>
+
+    <hr>
+
+    <!-- CORE TECHNICAL SKILLS -->
+    <h2 class="section-header">Core Technical Skills</h2>
+
+    <div class="skill-category">
+      <h3 class="section-cat">AI &amp; LLM Engineering</h3>
+      <div class="skills-grid">
+        <div class="skill-group"><span class="label">Agentic AI Frameworks:</span> OpenAI Agents SDK, Zapier, n8n (multi-agent systems with cooperative Content, Engagement, Strategy &amp; Optimization agents); brand-safety guardrail layers; human-in-the-loop approval workflows; LangGraph &amp; AutoGen (quick MVPs and experimentation)</div>
+        <div class="skill-group"><span class="label">RAG Systems:</span> End-to-end RAG pipeline design — chunking strategies, context-preserving overlap, OpenAI embedding models, Pinecone vector DB, custom re-ranking and precise citation/clause mapping</div>
+        <div class="skill-group"><span class="label">LLMs &amp; Orchestration:</span> GPT-4, Gemini, GLM; Azure OpenAI; structured prompt engineering, tool calling, binary cascade and majority-voting workflows</div>
+        <div class="skill-group"><span class="label">Production AI Monitoring:</span> MLOps pipeline automation, confidence scoring, hallucination mitigation via consensus workflows, model performance evaluation</div>
+        <div class="skill-group"><span class="label">OCR &amp; Document Pipelines:</span> Azure Document Intelligence / Form Recognizer; custom PII redaction and NLP preprocessing pipelines</div>
+      </div>
+    </div>
+
+    <div class="skill-category">
+      <h3 class="section-cat">Backend Engineering</h3>
+      <div class="skills-grid">
+        <div class="skill-group"><span class="label">C# / .NET (Primary):</span> .NET 6/8 Web API, Domain-Driven Design (DDD) domain services, Hangfire background jobs, shared middlewares, REST API design — primary production language across 7+ years</div>
+        <div class="skill-group"><span class="label">Python (AI/ML &amp; Pipelines):</span> FastAPI service wrappers, data pipeline scripting, ML experimentation, and AI integration work; used across all AI/ML and data engineering projects</div>
+        <div class="skill-group"><span class="label">Node.js:</span> API services and integrations across multiple client projects</div>
+        <div class="skill-group"><span class="label">Data Stores:</span> PostgreSQL, Azure SQL, Cosmos DB, Redis, MongoDB, Pinecone</div>
+        <div class="skill-group"><span class="label">AI Development Tools:</span> GitHub Copilot, Cursor, Claude, Antigravity</div>
+      </div>
+    </div>
+
+    <div class="skill-category">
+      <h3 class="section-cat">Cloud &amp; AWS</h3>
+      <div class="skills-grid">
+        <div class="skill-group"><span class="label">AWS (Hands-on):</span> Lambda, SQS, SNS, S3, API Gateway, CloudWatch, EventBridge, AWS CLI</div>
+        <div class="skill-group"><span class="label">Azure (Deep):</span> Azure OpenAI, Azure AI Foundry (&approx; Bedrock), Azure ML Workspace (&approx; SageMaker), Azure Blob Storage, Azure Service Bus, Azure API Management, Azure Kubernetes Service (AKS), Azure Document Intelligence, Azure NER</div>
+        <div class="skill-group"><span class="label">Kubernetes &amp; Containers:</span> AKS — 7+ years; Docker; microservices orchestration at scale</div>
+        <div class="skill-group"><span class="label">CI/CD &amp; IaC:</span> Azure DevOps, Azure CLI, AWS CLI, Firebase CLI, GitHub CLI; Bicep (Azure IaC)</div>
+        <div class="skill-group"><span class="label">Event-Driven Architecture:</span> Apache Kafka, AWS SQS/SNS, AWS EventBridge, Azure Service Bus — high-throughput, real-time message integration</div>
+      </div>
+    </div>
+
+    <div class="skill-category">
+      <h3 class="section-cat">MLOps &amp; Data Science</h3>
+      <div class="skills-grid">
+        <div class="skill-group"><span class="label">ML Lifecycle:</span> Azure ML Workspace — automated training triggers, hyperparameter tuning, AutoML champion selection, managed production endpoint deployment</div>
+        <div class="skill-group"><span class="label">Algorithms:</span> XGBoost, SVC, Linear Regression, BERT fine-tuning (custom loss functions &amp; hyperparameters), NLP feature engineering</div>
+        <div class="skill-group"><span class="label">Data Engineering:</span> Text embeddings, normalization, synthetic data generation, LLM-assisted dataset cleansing and denoising</div>
+      </div>
+    </div>
+
+  </div>
+
+
+  <!-- ==================== PAGE 2: WORK EXPERIENCE ==================== -->
+  <div class="cv-page" id="page-2">
+    
+    <h2 class="section-header">Work Experience</h2>
+
+    <!-- 10Pearls -->
+    <div class="job">
+      <div class="job-header">
+        <div>
+          <span class="job-title">Principal Software Engineer</span>
+          <span style="font-weight:500; color:#475569; font-size:9.2pt;">(AI Focus)</span>
+          <br>
+          <span class="job-company">10Pearls Pakistan</span>
+          <span style="color:#64748b; font-size:8.6pt;">&nbsp;·&nbsp; Karachi, PK (International Clients)</span>
+        </div>
+        <div class="job-meta">January 2025 – Present</div>
+      </div>
+      <ul class="bullet-list">
+        <li>Lead AI engineer for enterprise AI products across international clients, owning architecture and end-to-end delivery.</li>
+        <li>Architected and delivered production RAG platforms using <strong>Azure AI Search</strong>, Pinecone, and OpenAI embeddings with custom citation-mapping engines for precise page/clause attribution for audit teams.</li>
+        <li>Built and deployed <strong>multi-agent AI systems</strong> (Content, Engagement, Strategy, Optimization agents) using OpenAI Agents SDK with brand-safety guardrail layers and configurable human-in-the-loop approval workflows.</li>
+        <li>Leveraged <strong>Azure OpenAI</strong> and <strong>Azure AI Foundry</strong> for managed LLM access, model deployment, and AI service orchestration across client projects.</li>
+        <li>Owned the full <strong>MLOps lifecycle</strong> in Azure ML Workspace: automated ingestion from blob storage &rarr; preprocessing &rarr; model training with AutoML &rarr; production inference endpoint deployment.</li>
+        <li>Engineered agentic <strong>MCP (Model Context Protocol)</strong> workflows connecting LLMs to live SQL/NoSQL databases for natural-language business intelligence queries.</li>
+        <li>Designed and delivered a custom <strong>OCR/NLP anonymization pipeline</strong> using Azure Document Intelligence and Azure NER — integrated directly into upstream ML training workflows.</li>
+        <li>Produced architecture diagrams, RFP responses, and technical roadmaps for C-level and technical stakeholder audiences.</li>
+      </ul>
+    </div>
+
+    <hr class="thin">
+
+    <!-- Turing.com -->
+    <div class="job">
+      <div class="job-header">
+        <div>
+          <span class="job-title">Technical Lead</span>
+          <br>
+          <span class="job-company">Turing.com (Contract)</span>
+          <span style="color:#64748b; font-size:8.6pt;">&nbsp;·&nbsp; Remote, US</span>
+        </div>
+        <div class="job-meta">July 2022 – January 2025</div>
+      </div>
+      <ul class="bullet-list">
+        <li>Owned end-to-end solution design and delivery for a US healthcare facility-management SaaS platform — greenfield architecture, DB design, and engineering team leadership.</li>
+        <li>Built cloud-native backend on Azure with <strong>AKS (Kubernetes)</strong>, App Service, Azure SQL, and Azure AD SSO.</li>
+        <li>Introduced Hangfire for reliable async background processing across scheduling, payroll, and HR workflows.</li>
+        <li>Implemented DDD domain services with bounded contexts, structured logging middlewares, and global exception handling for production-grade reliability.</li>
+      </ul>
+    </div>
+
+    <hr class="thin">
+
+    <!-- VentureDive -->
+    <div class="job">
+      <div class="job-header">
+        <div>
+          <span class="job-title">Senior Software Engineer</span>
+          <br>
+          <span class="job-company">VentureDive (Contractor)</span>
+          <span style="color:#64748b; font-size:8.6pt;">&nbsp;·&nbsp; Remote</span>
+        </div>
+        <div class="job-meta">September 2020 – April 2022</div>
+      </div>
+      <ul class="bullet-list">
+        <li>Delivered production backend services across multiple clients (Daraz, Motiv, PayActiv) spanning ecommerce, payment gateways, and financial software.</li>
+        <li>Built event-driven data pipelines and integrations using <strong>Apache Kafka</strong>, <strong>Azure Service Bus</strong>, and <strong>AWS EventBridge</strong> — high-throughput, real-time processing.</li>
+        <li>Stack: .NET, Node.js, PostgreSQL; performance optimisation and technical auditing across client platforms.</li>
+      </ul>
+    </div>
+
+    <hr class="thin">
+
+    <!-- Stingray Technologies -->
+    <div class="job">
+      <div class="job-header">
+        <div>
+          <span class="job-title">Senior Software Engineer</span>
+          <br>
+          <span class="job-company">Stingray Technologies (Pvt) Ltd</span>
+          <span style="color:#64748b; font-size:8.6pt;">&nbsp;·&nbsp; Karachi, PK</span>
+        </div>
+        <div class="job-meta">October 2017 – August 2020</div>
+      </div>
+      <ul class="bullet-list">
+        <li>Owned core platform development for real-time, distributed defence equipment systems with strict performance constraints on high-throughput message delivery.</li>
+        <li>Built and maintained simulators for system validation; delivered in C#, SQL, and MongoDB.</li>
+      </ul>
+    </div>
+
+    <hr class="thin">
+
+    <!-- Techlogix -->
+    <div class="job">
+      <div class="job-header">
+        <div>
+          <span class="job-title">Software Engineer</span>
+          <br>
+          <span class="job-company">Techlogix</span>
+          <span style="color:#64748b; font-size:8.6pt;">&nbsp;·&nbsp; Karachi, PK</span>
+        </div>
+        <div class="job-meta">December 2016 – October 2017</div>
+      </div>
+      <ul class="bullet-list">
+        <li>Developed highly scalable enterprise solutions for local and international clients using .NET Web API and SQL Server.</li>
+      </ul>
+    </div>
+
+  </div>
+
+
+  <!-- ==================== PAGE 3: KEY PROJECTS & EDUCATION ==================== -->
+  <div class="cv-page" id="page-3">
+    
+    <h2 class="section-header">Key AI &amp; Production Projects</h2>
+
+    <!-- Project 1 -->
+    <div class="project">
+      <div class="project-title">1. Enterprise Document Q&amp;A &amp; Citation Engine (RAG)</div>
+      <div class="project-stack">Python · FastAPI · Pinecone · OpenAI Embeddings</div>
+      <ul class="bullet-list">
+        <li>Production RAG system for UK audit teams: ingests large financial documents, performs semantic retrieval via <strong>Pinecone vector DB</strong>, and returns LLM answers with precise page/clause citations — a hard compliance requirement.</li>
+        <li>Engineered specialized document chunking and overlap strategies to prevent context fragmentation during retrieval.</li>
+        <li>Diagnosed and resolved timeout and memory bottlenecks in the legacy system, enabling it to handle enterprise-scale document volumes reliably in production.</li>
+      </ul>
+    </div>
+
+    <hr class="thin">
+
+    <!-- Project 2 -->
+    <div class="project">
+      <div class="project-title">2. Tax Transaction Categorization Engine (MLOps · Production AI)</div>
+      <div class="project-stack">Python · Azure ML Workspace · AutoML · Azure Blob Storage · FastAPI</div>
+      <ul class="bullet-list">
+        <li>End-to-end production AI system classifying financial transactions into 76 DPL categories and 6 Capital Allowances pools for UK audit compliance — <strong>80% accuracy</strong> achieved on AI-cleansed dataset.</li>
+        <li>Fully automated MLOps pipeline: Blob ingestion &rarr; preprocessing &rarr; AutoML training &amp; hyperparameter tuning &rarr; managed production inference endpoint deployment.</li>
+        <li>Evaluated XGBoost, SVC, Linear Regression, and fine-tuned BERT; implemented a hybrid majority-voting LLM pipeline for high-variability transaction types.</li>
+      </ul>
+    </div>
+
+    <hr class="thin">
+
+    <!-- Project 3 -->
+    <div class="project">
+      <div class="project-title">3. Agency Platform — Multi-Agent AI SaaS</div>
+      <div class="project-stack">Python · OpenAI Agents SDK · Zapier · n8n · PostgreSQL · Docker · Gemini/OpenAI/GLM APIs</div>
+      <ul class="bullet-list">
+        <li>Self-hosted multi-tenant SaaS with <strong>AI agents</strong> (Content, Engagement, Strategy, Optimization) built on OpenAI Agents SDK, Zapier, and n8n automating social media management for multiple agency clients.</li>
+        <li>Implemented brand-safety guardrail layers and configurable human-in-the-loop approval gates for ad spend and sensitive content.</li>
+        <li>Integrated Meta Graph API, X API, YouTube API, LinkedIn API, TikTok API, Google Ads API, and email marketing APIs.</li>
+      </ul>
+    </div>
+
+    <hr class="thin">
+
+    <!-- Project 4 -->
+    <div class="project">
+      <div class="project-title">4. Conversational Database Interface (Agentic AI · MCP)</div>
+      <div class="project-stack">Python · MCP · LLMs · React</div>
+      <ul class="bullet-list">
+        <li>Agentic AI system enabling non-technical users to query complex SQL/NoSQL databases in natural language, returning structured insights with step-by-step query reasoning.</li>
+        <li>Engineered custom <strong>MCP (Model Context Protocol)</strong> server workflows bridging LLMs with live database connections and schema-context mapping.</li>
+      </ul>
+    </div>
+
+    <hr class="thin">
+
+    <!-- Project 5 -->
+    <div class="project">
+      <div class="project-title">5. Custom Document Anonymization Pipeline (OCR · NLP)</div>
+      <div class="project-stack">Python · FastAPI · Azure Document Intelligence · Azure NER</div>
+      <ul class="bullet-list">
+        <li>Custom PII redaction pipeline using Azure Document Intelligence and Azure Named Entity Recognition to sanitize financial audit documents before AI ingestion.</li>
+        <li>Developed rule-based and ML-based redaction layers; integrated directly into upstream ML training pipelines.</li>
+      </ul>
+    </div>
+
+    <hr>
+
+    <!-- EDUCATION -->
+    <div class="edu-block">
+      <h2 class="section-header" style="margin-top:4px;">Education</h2>
+      <div class="edu-title">Bachelor of Engineering — Computer Engineering</div>
+      <div class="edu-meta">NED University of Engineering and Technology &nbsp;|&nbsp; 2013 – 2016 &nbsp;|&nbsp; <strong>CGPA: 3.86 / 4.00</strong></div>
+    </div>
+
+  </div>
+
+</body>
+</html>

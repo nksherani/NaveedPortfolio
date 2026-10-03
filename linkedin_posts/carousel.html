@@ -1,0 +1,540 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Enterprise Agentic RAG Carousel (Mobile-Optimized)</title>
+    <style>
+        @page {
+            size: 1080px 1350px;
+            margin: 0;
+        }
+        * {
+            box-sizing: border-box;
+        }
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+            background: #060913;
+            color: #f8fafc;
+            -webkit-print-color-adjust: exact;
+        }
+        
+        /* Slide Container */
+        .slide {
+            width: 1080px;
+            height: 1350px;
+            page-break-after: always;
+            position: relative;
+            overflow: hidden;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            padding: 80px 60px;
+            background: linear-gradient(145deg, #0a0f1d 0%, #05070c 100%);
+        }
+
+        /* Ambient Glow Backgrounds */
+        .slide::before {
+            content: "";
+            position: absolute;
+            width: 700px;
+            height: 700px;
+            top: -250px;
+            right: -250px;
+            background: radial-gradient(circle, rgba(99, 102, 241, 0.18) 0%, rgba(0, 0, 0, 0) 70%);
+            z-index: 1;
+            pointer-events: none;
+        }
+
+        .slide::after {
+            content: "";
+            position: absolute;
+            width: 700px;
+            height: 700px;
+            bottom: -250px;
+            left: -250px;
+            background: radial-gradient(circle, rgba(139, 92, 246, 0.15) 0%, rgba(0, 0, 0, 0) 70%);
+            z-index: 1;
+            pointer-events: none;
+        }
+
+        /* Branding Header */
+        .header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            z-index: 10;
+        }
+        .header .logo {
+            font-size: 24px;
+            font-weight: 800;
+            letter-spacing: 2px;
+            color: #818cf8;
+            text-transform: uppercase;
+        }
+        .header .tag {
+            font-size: 18px;
+            font-weight: 700;
+            background: rgba(129, 140, 248, 0.12);
+            border: 1.5px solid rgba(129, 140, 248, 0.25);
+            padding: 8px 18px;
+            border-radius: 20px;
+            color: #a5b4fc;
+            letter-spacing: 1px;
+            text-transform: uppercase;
+        }
+
+        /* Footer */
+        .footer {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            z-index: 10;
+            border-top: 2px solid rgba(255, 255, 255, 0.08);
+            padding-top: 30px;
+        }
+        .footer .author {
+            font-size: 20px;
+            color: #94a3b8;
+            font-weight: 600;
+        }
+        .footer .slide-number {
+            font-size: 22px;
+            font-weight: 800;
+            color: #f8fafc;
+            background: rgba(255, 255, 255, 0.08);
+            padding: 8px 22px;
+            border-radius: 30px;
+            border: 1.5px solid rgba(255, 255, 255, 0.15);
+        }
+        .footer .swipe-hint {
+            font-size: 20px;
+            font-weight: 700;
+            color: #6366f1;
+            letter-spacing: 1px;
+            text-transform: uppercase;
+        }
+
+        /* Slide Content Areas */
+        .content {
+            z-index: 10;
+            flex-grow: 1;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            margin: 40px 0;
+        }
+
+        /* Typography & Custom Classes */
+        h1.title {
+            font-size: 90px;
+            font-weight: 900;
+            line-height: 1.1;
+            margin: 0 0 30px 0;
+            letter-spacing: -3px;
+            color: #ffffff;
+        }
+        h1.title span.gradient {
+            background: linear-gradient(to right, #6366f1, #a855f7, #ec4899);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+        
+        .subtitle {
+            font-size: 34px;
+            line-height: 1.5;
+            color: #cbd5e1;
+            margin: 0 0 50px 0;
+            font-weight: 400;
+            max-width: 900px;
+        }
+
+        .slide-title {
+            font-size: 56px;
+            font-weight: 900;
+            margin: 0 0 16px 0;
+            color: #ffffff;
+            letter-spacing: -1.5px;
+            line-height: 1.2;
+        }
+        .slide-title span {
+            color: #6366f1;
+        }
+        .slide-intro {
+            font-size: 28px;
+            color: #94a3b8;
+            margin: 0 0 40px 0;
+            line-height: 1.5;
+        }
+
+        /* Cards and Lists */
+        .card-container {
+            display: flex;
+            flex-direction: column;
+            gap: 28px;
+        }
+        .card {
+            background: rgba(255, 255, 255, 0.03);
+            border: 1.5px solid rgba(255, 255, 255, 0.08);
+            border-radius: 20px;
+            padding: 30px 35px;
+            display: flex;
+            align-items: flex-start;
+            gap: 28px;
+        }
+        .card .icon-num {
+            background: linear-gradient(135deg, #6366f1 0%, #a855f7 100%);
+            color: #ffffff;
+            font-size: 28px;
+            font-weight: 900;
+            width: 60px;
+            height: 60px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border-radius: 14px;
+            flex-shrink: 0;
+        }
+        .card-content {
+            display: flex;
+            flex-direction: column;
+        }
+        .card-title {
+            font-size: 30px;
+            font-weight: 800;
+            color: #ffffff;
+            margin: 0 0 10px 0;
+            line-height: 1.3;
+        }
+        .card-desc {
+            font-size: 25px;
+            color: #cbd5e1;
+            line-height: 1.5;
+            margin: 0;
+        }
+
+        /* Tech Badges */
+        .tech-grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 26px;
+            margin-top: 20px;
+        }
+        .tech-badge {
+            background: rgba(255, 255, 255, 0.03);
+            border: 1.5px solid rgba(255, 255, 255, 0.08);
+            padding: 26px;
+            border-radius: 16px;
+            display: flex;
+            align-items: center;
+            gap: 22px;
+        }
+        .tech-badge-title {
+            font-size: 28px;
+            font-weight: 800;
+            color: #ffffff;
+        }
+        .tech-badge-desc {
+            font-size: 20px;
+            color: #94a3b8;
+            margin-top: 4px;
+        }
+
+        /* Step Indicator / Pipeline Visual */
+        .pipeline {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            background: rgba(255, 255, 255, 0.015);
+            border: 1.5px solid rgba(255, 255, 255, 0.08);
+            border-radius: 20px;
+            padding: 35px 25px;
+            margin-top: 20px;
+        }
+        .pipeline-step {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+            flex: 1;
+        }
+        .pipeline-circle {
+            width: 70px;
+            height: 70px;
+            border-radius: 50%;
+            background: rgba(255, 255, 255, 0.05);
+            border: 3px solid #475569;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 26px;
+            font-weight: 800;
+            color: #94a3b8;
+            margin-bottom: 14px;
+        }
+        .pipeline-step.active .pipeline-circle {
+            background: linear-gradient(135deg, #6366f1 0%, #a855f7 100%);
+            border-color: #818cf8;
+            color: #ffffff;
+        }
+        .pipeline-arrow {
+            color: #475569;
+            font-size: 34px;
+            font-weight: bold;
+            padding-bottom: 25px;
+        }
+        .pipeline-label {
+            font-size: 20px;
+            font-weight: 700;
+            color: #94a3b8;
+        }
+        .pipeline-step.active .pipeline-label {
+            color: #ffffff;
+        }
+
+    </style>
+</head>
+<body>
+
+    <!-- SLIDE 1: Cover Page -->
+    <div class="slide">
+        <div class="header">
+            <div class="logo">NAVEED AHMED</div>
+            <div class="tag">System Design</div>
+        </div>
+        <div class="content">
+            <h1 class="title">BEYOND<br>BASIC <span class="gradient">RAG</span></h1>
+            <p class="subtitle">The 4-step architecture blueprint for audit-ready, zero-trust enterprise AI systems.</p>
+        </div>
+        <div class="footer">
+            <span class="author">AI Solution Architect</span>
+            <span class="swipe-hint">SWIPE LEFT ➡️</span>
+        </div>
+    </div>
+
+    <!-- SLIDE 2: Why Naive RAG Fails -->
+    <div class="slide">
+        <div class="header">
+            <div class="logo">NAVEED AHMED</div>
+            <div class="tag">The Challenge</div>
+        </div>
+        <div class="content">
+            <h2 class="slide-title">The Production <span>Trust Gap</span></h2>
+            <p class="slide-intro">Building a RAG demo is simple. Moving it to production for financial compliance or auditing exposes major flaws:</p>
+            <div class="card-container">
+                <div class="card">
+                    <div class="icon-num">1</div>
+                    <div class="card-content">
+                        <h3 class="card-title">PII Ingestion Risks</h3>
+                        <p class="card-desc">Feeding raw, unredacted corporate documents directly to public LLMs violates data privacy laws (GDPR, HIPAA).</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="icon-num">2</div>
+                    <div class="card-content">
+                        <h3 class="card-title">Context Fragmentation</h3>
+                        <p class="card-desc">Basic token-based chunking slices sentences in half, causing the model to lose context on complex tables or legal definitions.</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="icon-num">3</div>
+                    <div class="card-content">
+                        <h3 class="card-title">Missing Citations</h3>
+                        <p class="card-desc">Models generate answers but cannot trace their statements back to the exact page, clause, or paragraph of the source document.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer">
+            <span class="author">Enterprise AI Blueprint</span>
+            <span class="slide-number">02 / 06</span>
+        </div>
+    </div>
+
+    <!-- SLIDE 3: Phase 1: Ingestion & Scrubbing -->
+    <div class="slide">
+        <div class="header">
+            <div class="logo">NAVEED AHMED</div>
+            <div class="tag">Phase 1</div>
+        </div>
+        <div class="content">
+            <h2 class="slide-title">1. Zero-Trust <span>Ingestion</span></h2>
+            <p class="slide-intro">Never ingest raw data. We sanitize files at the entry point using structural parsing and named entity recognition:</p>
+            <div class="card-container" style="margin-bottom: 30px;">
+                <div class="card">
+                    <div class="icon-num">A</div>
+                    <div class="card-content">
+                        <h3 class="card-title">Structure Extraction</h3>
+                        <p class="card-desc">Use tools like Azure Document Intelligence to parse headers, tables, and sections while keeping layouts intact.</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="icon-num">B</div>
+                    <div class="card-content">
+                        <h3 class="card-title">PII Redaction Pipeline</h3>
+                        <p class="card-desc">Run raw text through a high-performance NER pipeline. Scrub names, tax identifiers, and emails before saving them to the vector store.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="pipeline">
+                <div class="pipeline-step active">
+                    <div class="pipeline-circle">1</div>
+                    <div class="pipeline-label">Raw Docs</div>
+                </div>
+                <div class="pipeline-arrow">➔</div>
+                <div class="pipeline-step active">
+                    <div class="pipeline-circle">2</div>
+                    <div class="pipeline-label">Azure DI</div>
+                </div>
+                <div class="pipeline-arrow">➔</div>
+                <div class="pipeline-step active">
+                    <div class="pipeline-circle">3</div>
+                    <div class="pipeline-label">NER Scrub</div>
+                </div>
+                <div class="pipeline-arrow">➔</div>
+                <div class="pipeline-step">
+                    <div class="pipeline-circle">4</div>
+                    <div class="pipeline-label">Vector DB</div>
+                </div>
+            </div>
+        </div>
+        <div class="footer">
+            <span class="author">Enterprise AI Blueprint</span>
+            <span class="slide-number">03 / 06</span>
+        </div>
+    </div>
+
+    <!-- SLIDE 4: Phase 2: Citation Mapping -->
+    <div class="slide">
+        <div class="header">
+            <div class="logo">NAVEED AHMED</div>
+            <div class="tag">Phase 2</div>
+        </div>
+        <div class="content">
+            <h2 class="slide-title">2. Precision <span>Citations</span></h2>
+            <p class="slide-intro">Avoid generic matches. Implement a metadata-rich parent-child document chunking strategy that forces LLMs to reference source locations:</p>
+            <div class="card-container">
+                <div class="card">
+                    <div class="icon-num">1</div>
+                    <div class="card-content">
+                        <h3 class="card-title">Parent-Child Chunking</h3>
+                        <p class="card-desc">Index small sub-chunks (100 tokens) for precise search matches, but retrieve their larger parent contexts (500-1000 tokens) to supply rich context to the LLM.</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="icon-num">2</div>
+                    <div class="card-content">
+                        <h3 class="card-title">High-Fidelity Metadata Mapping</h3>
+                        <p class="card-desc">Inject metadata tags directly into each chunk. Store document keys, precise page coordinates, clause IDs, and exact verbatim snippets.</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="icon-num">3</div>
+                    <div class="card-content">
+                        <h3 class="card-title">Enforced Citation Anchors</h3>
+                        <p class="card-desc">Format prompts to require the LLM to output footnotes. If the final output states a fact, it must link back to an index key.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer">
+            <span class="author">Enterprise AI Blueprint</span>
+            <span class="slide-number">04 / 06</span>
+        </div>
+    </div>
+
+    <!-- SLIDE 5: Phase 3: Agentic Verification -->
+    <div class="slide">
+        <div class="header">
+            <div class="logo">NAVEED AHMED</div>
+            <div class="tag">Phase 3</div>
+        </div>
+        <div class="content">
+            <h2 class="slide-title">3. Agentic <span>Verification</span></h2>
+            <p class="slide-intro">Linear pipelines are brittle. Instead, build stateful agent loops using LangGraph to plan, search, check, and optimize replies:</p>
+            <div class="card-container">
+                <div class="card">
+                    <div class="icon-num">1</div>
+                    <div class="card-content">
+                        <h3 class="card-title">The Planner Agent</h3>
+                        <p class="card-desc">Deconstructs complex user prompts into multi-step execution tasks (e.g., executing separate vector queries, SQL views, and comparison steps).</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="icon-num">2</div>
+                    <div class="card-content">
+                        <h3 class="card-title">The Retrieval Validator</h3>
+                        <p class="card-desc">Executes hybrid search (Keyword BM25 + Vector) and confirms retrieved documents contain the exact metadata required for verification.</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="icon-num">3</div>
+                    <div class="card-content">
+                        <h3 class="card-title">The Brand & Safety Guard</h3>
+                        <p class="card-desc">A separate LLM agent acts as a gating mechanism. It reviews the final output against hallucinations and strict brand-safety parameters.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer">
+            <span class="author">Enterprise AI Blueprint</span>
+            <span class="slide-number">05 / 06</span>
+        </div>
+    </div>
+
+    <!-- SLIDE 6: Summary & CTA -->
+    <div class="slide">
+        <div class="header">
+            <div class="logo">NAVEED AHMED</div>
+            <div class="tag">The Blueprint</div>
+        </div>
+        <div class="content">
+            <h2 class="slide-title">The Enterprise <span>Tech Stack</span></h2>
+            <p class="slide-intro">Putting the architectural pieces together with industry-leading frameworks:</p>
+            
+            <div class="tech-grid">
+                <div class="tech-badge">
+                    <div style="background: rgba(99, 102, 241, 0.15); width: 60px; height: 60px; border-radius: 12px; display: flex; align-items: center; justify-content: center; font-size: 24px; font-weight: bold; color: #818cf8; flex-shrink: 0;">LG</div>
+                    <div>
+                        <div class="tech-badge-title">LangGraph</div>
+                        <div class="tech-badge-desc">Stateful Agent Loops</div>
+                    </div>
+                </div>
+                <div class="tech-badge">
+                    <div style="background: rgba(168, 85, 247, 0.15); width: 60px; height: 60px; border-radius: 12px; display: flex; align-items: center; justify-content: center; font-size: 24px; font-weight: bold; color: #c084fc; flex-shrink: 0;">PC</div>
+                    <div>
+                        <div class="tech-badge-title">Pinecone / Azure</div>
+                        <div class="tech-badge-desc">Hybrid Vector Search</div>
+                    </div>
+                </div>
+                <div class="tech-badge">
+                    <div style="background: rgba(236, 72, 153, 0.15); width: 60px; height: 60px; border-radius: 12px; display: flex; align-items: center; justify-content: center; font-size: 24px; font-weight: bold; color: #f472b6; flex-shrink: 0;">AZ</div>
+                    <div>
+                        <div class="tech-badge-title">Azure OpenAI</div>
+                        <div class="tech-badge-desc">GPT-4o & Embeddings</div>
+                    </div>
+                </div>
+                <div class="tech-badge">
+                    <div style="background: rgba(34, 197, 94, 0.15); width: 60px; height: 60px; border-radius: 12px; display: flex; align-items: center; justify-content: center; font-size: 24px; font-weight: bold; color: #4ade80; flex-shrink: 0;">MP</div>
+                    <div>
+                        <div class="tech-badge-title">Model Context</div>
+                        <div class="tech-badge-desc">Conversational BI / SQL</div>
+                    </div>
+                </div>
+            </div>
+
+            <div style="margin-top: 50px; text-align: center; background: rgba(129, 140, 248, 0.05); border: 1.5px solid rgba(129, 140, 248, 0.18); padding: 35px; border-radius: 20px;">
+                <p style="margin: 0; font-size: 30px; font-weight: 800; color: #ffffff;">Let's connect to build your next enterprise AI system.</p>
+                <p style="margin: 12px 0 0 0; font-size: 22px; color: #cbd5e1;">Email: nksherani@outlook.com</p>
+                <p style="margin: 4px 0 0 0; font-size: 22px; color: #cbd5e1;">LinkedIn: /in/naveed-ahmed-96b45552</p>
+            </div>
+        </div>
+        <div class="footer">
+            <span class="author">Naveed Ahmed | AI Solution Architect</span>
+            <span class="slide-number">06 / 06</span>
+        </div>
+    </div>
+
+</body>
+</html>
